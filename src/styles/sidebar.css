@@ -1,7 +1,6 @@
 .sidebar {
-	padding: 35px 0;
-	padding-left: 40px;
-	position: fixed;
+	padding: 35px 40px;
+	position: sticky;
 }
 
 .sidebar h1 {
@@ -31,7 +30,7 @@
 }
 
 .sidebarFooter {
-	margin-top: 90px;
+	padding-top: 90px;
 	line-height: 3px;
 }
 

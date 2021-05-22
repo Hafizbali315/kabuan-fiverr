@@ -105,3 +105,44 @@
 .printer_section {
 	padding: 25px 0;
 }
+
+/* New */
+
+/* Home Header */
+.home_header {
+	display: flex;
+	align-items: center;
+}
+.home_header .home_search {
+	display: flex;
+	align-items: center;
+}
+.home_header p {
+	font-weight: normal;
+	font-size: 14.1298px;
+	color: #060e14;
+	padding-top: 16px;
+	padding-left: 25px;
+	opacity: 0.5;
+}
+
+/* Progression Section */
+.progression_section h1 {
+	display: flex;
+	flex-direction: row;
+}
+
+.progression_section .progression_value {
+	width: 35px;
+	height: 35px;
+	background: #132a3a;
+	border-radius: 50%;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 11.373px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 25px;
+	margin-top: -2px;
+}
