@@ -1,7 +1,33 @@
 .app {
 	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+}
+
+.row {
+	padding: 0;
+	margin: 0;
+}
+
+.col {
+	padding: 0;
+	margin: 0;
+}
+
+.main_section {
+	margin: 0;
+	padding: 0;
+	background: #f9f9f9;
+}
+
+.hr_line {
+	border: 1px dashed #b8b8b8;
+	/* width: 1193px; */
+	height: 0px;
 }
 
 @import './styles/login.css';
 @import './styles/home.css';
 @import './styles/sidebar.css';
+@import './styles/smallCard.css';
+@import './styles/progressBar.css';

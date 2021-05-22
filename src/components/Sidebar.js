@@ -12,7 +12,9 @@ import SettingImg from '../images/setting.svg'
 const Sidebar = () => {
 	return (
 		<div className="sidebar">
-			<h1>KABAUN</h1>
+			<Link to="/" style={{ outline: 'none', textDecoration: 'none' }}>
+				<h1>KABAUN</h1>
+			</Link>
 
 			<div className="sidebarLinks">
 				<Link className="linkList" to="/rapport">

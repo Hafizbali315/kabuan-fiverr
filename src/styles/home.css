@@ -1,4 +1,107 @@
 .home_container {
-	margin: 0;
-	padding: 0;
+	margin: 35px 30px;
+}
+
+.profile_bar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.menuIcon {
+	display: flex;
+	flex-direction: row;
+}
+
+.profile_bar .menuIcon p {
+	font-weight: normal;
+	font-size: 14.1298px;
+	color: #060e14;
+	padding-top: 16px;
+	padding-left: 25px;
+	opacity: 0.5;
+}
+
+.imgContainer img {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+}
+
+.profileDropdown {
+	display: flex;
+	flex-direction: row;
+	line-height: 1px;
+}
+
+.profileName h6 {
+	font-weight: 600;
+	font-size: 11.527px;
+	color: #060e14;
+	padding-top: 4px;
+	padding-left: 7px;
+}
+
+.profileName span {
+	font-weight: normal;
+	font-size: 8.22466px;
+	color: #060e14;
+	padding-left: 14px;
+	text-align: center;
+}
+
+.dropdownIcon {
+	padding-top: 10px;
+	padding-left: 14px;
+}
+
+.arrowDown {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+
+.synthetic_impact {
+	padding: 25px 0;
+}
+
+.synthetic_impact h1,
+.progression_container h1,
+.printer_section h1 {
+	font-weight: bold;
+	font-size: 22.9044px;
+	color: #060e14;
+	padding: 25px 0;
+}
+
+.progression_container {
+	padding: 30px 0;
+}
+
+.progression_container h1 {
+	display: flex;
+	flex-direction: row;
+}
+
+.progression_container .progression_value {
+	width: 35px;
+	height: 35px;
+	background: #132a3a;
+	border-radius: 50%;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 11.373px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 25px;
+	margin-top: -2px;
+}
+
+.printer_section {
+	padding: 25px 0;
 }

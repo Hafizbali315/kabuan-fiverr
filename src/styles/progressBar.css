@@ -1,0 +1,59 @@
+.progress_card {
+	width: 1193px;
+	height: 160px;
+
+	background: #ffffff;
+	border-radius: 3px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.progress {
+	width: 950px;
+	height: 17px;
+	background-color: #f9f9f9;
+	border-radius: 21px;
+}
+
+.progress_done {
+	background-color: #63ddcf;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	opacity: 1;
+}
+
+.progress_container {
+	/* margin: 200px auto; */
+	position: absolute;
+	top: 67px;
+}
+
+.progress_container p {
+	font-weight: 500;
+	font-size: 12px;
+	color: #060e14;
+	padding-top: 16px;
+}
+
+.progress_dot {
+	width: 8px;
+	height: 8px;
+
+	background: red;
+}
+
+ul {
+	text-align: center;
+}
+
+ul li {
+	display: inline-block;
+	width: 200px;
+}
