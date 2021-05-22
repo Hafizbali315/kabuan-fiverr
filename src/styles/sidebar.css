@@ -1,0 +1,47 @@
+.sidebar {
+	padding-top: 38px;
+	padding-left: 40px;
+}
+
+.sidebar h1 {
+	font-weight: 800;
+	font-size: 23.5106px;
+	color: #132a3a;
+	display: flex;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.sidebarLinks {
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebarLinks .linkList {
+	list-style: none;
+	font-weight: normal;
+	font-size: 14.1298px;
+	color: #060e14;
+	text-decoration: none;
+	padding: 20px 0;
+}
+.sidebarLinks .linkList img {
+	padding-right: 20px;
+}
+
+.sidebarFooter {
+	margin-top: 90px;
+	line-height: 3px;
+}
+
+.sidebarFooter h2 {
+	font-weight: 600;
+	font-size: 14.1298px;
+	color: #060e14;
+}
+
+.sidebarFooter p {
+	font-weight: normal;
+	font-size: 10.0818px;
+	color: #060e14;
+}
