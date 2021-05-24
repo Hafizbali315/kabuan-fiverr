@@ -1,0 +1,20 @@
+.bar_chart {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+.bar_container {
+	border-left: 10px solid #f9f9f9;
+	height: 200px;
+	border-radius: 50px;
+	position: relative;
+}
+
+.fillBar {
+	border-left: 10px solid #63ddcf;
+	border-radius: 50px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
