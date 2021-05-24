@@ -3,18 +3,54 @@
 	justify-content: space-around;
 	align-items: center;
 	padding: 20px;
+	background-color: #ffffff;
+	height: 250px;
 }
 .bar_container {
-	border-left: 10px solid #f9f9f9;
+	border-left: 12px solid #f9f9f9;
 	height: 200px;
 	border-radius: 50px;
 	position: relative;
 }
 
 .fillBar {
-	border-left: 10px solid #63ddcf;
+	border-left: 12px solid #63ddcf;
 	border-radius: 50px;
 	position: absolute;
 	bottom: 0;
 	right: 0;
+}
+
+.type_card {
+	background-color: #ffffff;
+	height: 250px;
+}
+
+.type_card h2 {
+	font-weight: 600;
+	font-size: 15.0968px;
+	color: #060e14;
+}
+
+.type_card_details {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.type_card_details .type_color_line {
+	width: 32px;
+	height: 6px;
+	margin-right: 15px;
+	border-radius: 5px;
+}
+.type_card_details h3 {
+	padding-top: 8px;
+	font-weight: bold;
+	font-size: 10.9861px;
+	color: #060e14;
+}
+
+.type_card_details h3 span {
+	color: #b8b8b8;
 }

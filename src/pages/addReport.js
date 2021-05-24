@@ -4,6 +4,7 @@ import HandHeart from '../images/hand-heart.svg'
 import LayoutLine from '../images/perimeter.svg'
 import AnticlockwiseLine from '../images/anticlockwise-line.svg'
 import BarChart from '../components/BarChart'
+import ByTypeCard from '../components/ByTypeCard'
 
 const AddReport = () => {
 	return (
@@ -68,7 +69,10 @@ const AddReport = () => {
 					<BarChart />
 				</div>
 
-				<div className="col-3">Chart 2</div>
+				{/* By Type Card */}
+				<div className="col-3">
+					<ByTypeCard />
+				</div>
 				<div className="col-4">Chart 3</div>
 			</div>
 		</div>

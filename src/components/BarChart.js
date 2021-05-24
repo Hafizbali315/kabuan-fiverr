@@ -1,6 +1,6 @@
 const BarChart = () => {
 	return (
-		<div className="bar_chart" style={{ backgroundColor: '#FFFFFF', height: '250px' }}>
+		<div className="bar_chart">
 			<div className="bar_container">
 				<div className="fillBar" style={{ height: '123.86px' }}></div>
 			</div>
