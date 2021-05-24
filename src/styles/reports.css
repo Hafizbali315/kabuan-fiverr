@@ -1,0 +1,68 @@
+.reports_header {
+	display: flex;
+	align-items: center;
+}
+
+.reports_header .reports_search {
+	display: flex;
+	align-items: center;
+}
+
+.reports_header p {
+	font-weight: normal;
+	font-size: 14.1298px;
+	color: #060e14;
+	padding-top: 16px;
+	padding-left: 25px;
+	opacity: 0.5;
+}
+
+.reports_list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.reports_list h1 {
+	display: flex;
+	flex-direction: row;
+}
+
+.reports_list .total_reports {
+	width: 35px;
+	height: 35px;
+	background: #132a3a;
+	border-radius: 50%;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 11.373px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 25px;
+	margin-top: -2px;
+}
+
+.reports_list_heading {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14.1298px;
+	line-height: 21px;
+
+	color: #060e14;
+
+	opacity: 0.5;
+}
+
+/* Report Card */
+.report_card {
+	display: flex;
+	align-items: center;
+	height: 75px;
+	background: #ffffff;
+	border-radius: 3px;
+	font-weight: 550;
+	font-size: 14.0968px;
+	color: #060e14;
+}

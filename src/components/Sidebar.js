@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import RapportImg from '../images/rapport.svg'
 import PerimeterImg from '../images/perimeter.svg'
 import VectorImg from '../images/vector.svg'
@@ -10,6 +10,11 @@ import HeadphoneImg from '../images/headphone.svg'
 import SettingImg from '../images/setting.svg'
 
 const Sidebar = () => {
+	const { pathname } = useLocation()
+
+	const isActive = (pn) => {
+		if (pn === pathname) return 'activeLink'
+	}
 	return (
 		<div className="sidebar">
 			<Link to="/" style={{ outline: 'none', textDecoration: 'none' }}>
@@ -17,42 +22,42 @@ const Sidebar = () => {
 			</Link>
 
 			<div className="sidebarLinks">
-				<Link className="linkList" to="/rapport">
+				<Link className={`linkList ${isActive('/reports') || isActive('/reports/add-report')}`} to="/reports">
 					<img src={RapportImg} alt="rapport" />
 					Rapport
 				</Link>
 
-				<Link className="linkList" to="/perimeter">
+				<Link className={`linkList ${isActive}`} to="/perimeter">
 					<img src={PerimeterImg} alt="perimeter" />
 					Périmètre
 				</Link>
 
-				<Link className="linkList" to="/factors">
+				<Link className={`linkList ${isActive}`} to="/factors">
 					<img src={VectorImg} alt="vector" />
 					Facteurs
 				</Link>
 
-				<Link className="linkList" to="/impact">
+				<Link className={`linkList ${isActive}`} to="/impact">
 					<img src={ImpactImg} alt="impact" />
 					Impact
 				</Link>
 
-				<Link className="linkList" to="/evaluation">
+				<Link className={`linkList ${isActive}`} to="/evaluation">
 					<img src={EvaluationImg} alt="Evaluation" />
 					Evaluation
 				</Link>
 
-				<Link className="linkList" to="/contribution">
+				<Link className={`linkList ${isActive}`} to="/contribution">
 					<img src={EarthImg} alt="EarthImg" />
 					Contribution
 				</Link>
 
-				<Link className="linkList" to="/assistance">
+				<Link className={`linkList ${isActive}`} to="/assistance">
 					<img src={HeadphoneImg} alt="HeadphoneImg" />
 					Assistance
 				</Link>
 
-				<Link className="linkList" to="/setting">
+				<Link className={`linkList ${isActive}`} to="/setting">
 					<img src={SettingImg} alt="SettingImg" />
 					Paramètres
 				</Link>

@@ -25,8 +25,30 @@ h1 {
 	color: #060e14;
 }
 
+.custom_btn {
+	border-radius: 25px;
+	padding: 13px;
+	font-weight: bold;
+	font-size: 10.9861px;
+	color: #ffffff;
+	border: none;
+	outline: none;
+}
+
+.icon_contaniner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	background: #f9f9f9;
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+}
+
 @import './styles/login.css';
 @import './styles/home.css';
 @import './styles/sidebar.css';
 @import './styles/smallCard.css';
 @import './styles/progressBar.css';
+@import './styles/reports.css';

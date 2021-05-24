@@ -25,6 +25,15 @@
 	text-decoration: none;
 	padding: 20px 0;
 }
+
+.sidebarLinks .activeLink {
+	font-weight: bold;
+	font-size: 14.1298px;
+	line-height: 21px;
+
+	color: #060e14;
+}
+
 .sidebarLinks .linkList img {
 	padding-right: 20px;
 }
