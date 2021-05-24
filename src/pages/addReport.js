@@ -5,6 +5,7 @@ import LayoutLine from '../images/perimeter.svg'
 import AnticlockwiseLine from '../images/anticlockwise-line.svg'
 import BarChart from '../components/BarChart'
 import ByTypeCard from '../components/ByTypeCard'
+import ArrowChart from '../components/ArrowChart'
 
 const AddReport = () => {
 	return (
@@ -73,7 +74,11 @@ const AddReport = () => {
 				<div className="col-3">
 					<ByTypeCard />
 				</div>
-				<div className="col-4">Chart 3</div>
+
+				{/* Arrow Chart */}
+				<div className="col-4">
+					<ArrowChart />
+				</div>
 			</div>
 		</div>
 	)

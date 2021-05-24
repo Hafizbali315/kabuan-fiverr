@@ -54,3 +54,13 @@
 .type_card_details h3 span {
 	color: #b8b8b8;
 }
+
+/*#################  Arrow Chart  ############### */
+.arrow_chart {
+	background-color: #ffffff;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 36px;
+}
