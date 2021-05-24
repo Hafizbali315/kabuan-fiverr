@@ -1,9 +1,11 @@
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import './App.css'
 import Sidebar from './components/Sidebar'
+import AddPerimeter from './pages/addPerimeter'
 import AddReport from './pages/addReport'
 import Home from './pages/home'
 import Login from './pages/login'
+import Perimeter from './pages/perimeter'
 import Reports from './pages/reports'
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
 							<Route exact path="/" component={Home} />
 							<Route exact path="/reports" component={Reports} />
 							<Route exact path="/reports/add-report" component={AddReport} />
+							<Route exact path="/perimeters" component={Perimeter} />
+							<Route exact path="/perimeters/add-perimeter" component={AddPerimeter} />
 						</div>
 					</div>
 				</Switch>

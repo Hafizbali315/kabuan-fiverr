@@ -27,7 +27,7 @@ const Sidebar = () => {
 					Rapport
 				</Link>
 
-				<Link className={`linkList ${isActive}`} to="/perimeter">
+				<Link className={`linkList ${isActive('/perimeters') || isActive('/perimeters/add-perimeter')}`} to="/perimeters">
 					<img src={PerimeterImg} alt="perimeter" />
 					Périmètre
 				</Link>

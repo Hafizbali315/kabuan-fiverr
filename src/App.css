@@ -77,6 +77,21 @@ h1 {
 	-webkit-transform: rotate(135deg);
 }
 
+.total_reports {
+	width: 35px;
+	height: 35px;
+	background: #132a3a;
+	border-radius: 50%;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 11.373px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 25px;
+	margin-top: -2px;
+}
+
 @import './styles/login.css';
 @import './styles/home.css';
 @import './styles/sidebar.css';
@@ -84,3 +99,4 @@ h1 {
 @import './styles/progressBar.css';
 @import './styles/reports.css';
 @import './styles/addReport.css';
+@import './styles/perimeter.css';

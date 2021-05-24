@@ -39,6 +39,8 @@ const Reports = () => {
 					</Link>
 				</div>
 			</div>
+
+			{/* Report Lists Cards Heading */}
 			<div className="row mt-4 reports_list_heading">
 				<div className="col-lg-4 px-1">Nom du rapport</div>
 				<div className="col-lg-2">Editeur</div>
@@ -46,6 +48,7 @@ const Reports = () => {
 				<div className="col-lg-4">Emissions</div>
 			</div>
 
+			{/* Report Lists Cards */}
 			<ReportListCard reportName="Paramètre digital" editor="Alexandre" protocol="GHG" emissions="2.4800" />
 			<ReportListCard reportName="Bilan carbone annuel" editor="Nicolas" protocol="BC" emissions="2.4800" />
 			<ReportListCard reportName="Rapport test" editor="Nicolas" protocol="ADEME" emissions="2.4800" />
