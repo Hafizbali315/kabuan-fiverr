@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import ProfileDropdown from '../components/ProfileDropdown'
-import SingleReportCard from '../components/SingleReportCard'
+import ReportListCard from '../components/ReportListCard'
 import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
 import SmileyImg from '../images/smiley.svg'
@@ -46,11 +46,11 @@ const Reports = () => {
 				<div className="col-lg-4">Emissions</div>
 			</div>
 
-			<SingleReportCard reportName="Paramètre digital" editor="Alexandre" protocol="GHG" emissions="2.4800" />
-			<SingleReportCard reportName="Bilan carbone annuel" editor="Nicolas" protocol="BC" emissions="2.4800" />
-			<SingleReportCard reportName="Rapport test" editor="Nicolas" protocol="ADEME" emissions="2.4800" />
-			<SingleReportCard reportName="Rapport physique" editor="Alexandre" protocol="GHG" emissions="2.4800" />
-			<SingleReportCard reportName="Rapport marketing" editor="Alexandre" protocol="ADEME" emissions="2.4800" />
+			<ReportListCard reportName="Paramètre digital" editor="Alexandre" protocol="GHG" emissions="2.4800" />
+			<ReportListCard reportName="Bilan carbone annuel" editor="Nicolas" protocol="BC" emissions="2.4800" />
+			<ReportListCard reportName="Rapport test" editor="Nicolas" protocol="ADEME" emissions="2.4800" />
+			<ReportListCard reportName="Rapport physique" editor="Alexandre" protocol="GHG" emissions="2.4800" />
+			<ReportListCard reportName="Rapport marketing" editor="Alexandre" protocol="ADEME" emissions="2.4800" />
 		</div>
 	)
 }

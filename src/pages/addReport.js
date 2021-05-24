@@ -6,6 +6,7 @@ import AnticlockwiseLine from '../images/anticlockwise-line.svg'
 import BarChart from '../components/BarChart'
 import ByTypeCard from '../components/ByTypeCard'
 import ArrowChart from '../components/ArrowChart'
+import FactorsListCard from '../components/FactorsListCard'
 
 const AddReport = () => {
 	return (
@@ -80,6 +81,23 @@ const AddReport = () => {
 					<ArrowChart />
 				</div>
 			</div>
+
+			{/* List of Factors */}
+			<div className="row mt-5 reports_list">
+				<h1>
+					Liste des facteurs <div className="total_reports">2</div>
+				</h1>
+			</div>
+
+			<div className="row mt-4 factors_list_headeings">
+				<div className="col-lg-3">Type de facteur</div>
+				<div className="col-lg-3">Impact</div>
+				<div className="col-lg-2">Structure</div>
+				<div className="col-lg-4">Emissions</div>
+			</div>
+
+			<FactorsListCard />
+			<FactorsListCard />
 		</div>
 	)
 }

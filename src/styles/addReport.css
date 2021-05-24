@@ -64,3 +64,23 @@
 	align-items: center;
 	padding-top: 36px;
 }
+
+/*################# List of Factors #################*/
+.factors_list_headeings {
+	font-weight: 600;
+	font-size: 14.1298px;
+	color: #060e14;
+	opacity: 0.5;
+}
+
+.factors_card {
+	display: flex;
+	align-items: center;
+	height: 75px;
+	background: #ffffff;
+	border-radius: 3px;
+	font-weight: 600;
+	font-size: 13.0968px;
+	line-height: 23px;
+	color: #060e14;
+}

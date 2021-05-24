@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import LayoutLine from '../images/perimeter.svg'
 
-const SingleReportCard = ({ reportName, editor, protocol, emissions }) => {
+const ReportListCard = ({ reportName, editor, protocol, emissions }) => {
 	return (
-		<div className="row mt-4 report_card">
+		<div className="row mt-4 reports_card">
 			<div className="col-4" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
 				<div className="icon_contaniner mx-2">
 					<img src={LayoutLine} alt="img" />
@@ -31,4 +31,4 @@ const SingleReportCard = ({ reportName, editor, protocol, emissions }) => {
 	)
 }
 
-export default SingleReportCard
+export default ReportListCard

@@ -56,7 +56,7 @@
 }
 
 /* Report Card */
-.report_card {
+.reports_card {
 	display: flex;
 	align-items: center;
 	height: 75px;
