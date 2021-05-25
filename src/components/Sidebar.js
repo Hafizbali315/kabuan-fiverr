@@ -32,7 +32,7 @@ const Sidebar = () => {
 					Périmètre
 				</Link>
 
-				<Link className={`linkList ${isActive}`} to="/factors">
+				<Link className={`linkList ${isActive('/factors') || isActive('/factors/add-factor')}`} to="/factors">
 					<img src={VectorImg} alt="vector" />
 					Facteurs
 				</Link>

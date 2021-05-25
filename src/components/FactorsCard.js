@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import FactorsIcon from '../images/delete_icon.svg'
 
-const ImpactListCard = ({ typeOfFactor, impact, structure, emissions }) => {
+const FactorsCard = ({ typeOfFactor, impact, structure, emissions }) => {
 	return (
 		<div className="row mt-4 impact_card">
 			<div className="col-3" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
@@ -31,4 +31,4 @@ const ImpactListCard = ({ typeOfFactor, impact, structure, emissions }) => {
 	)
 }
 
-export default ImpactListCard
+export default FactorsCard

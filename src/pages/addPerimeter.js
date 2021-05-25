@@ -96,7 +96,7 @@ const AddPerimeter = () => {
 					<h1>Information salariés</h1>
 				</div>
 			</div>
-			<div className="row mt-3">
+			<div className="row mt-3 mb-4">
 				<div className="col-lg-6 col-12 mt-md-0 mt-2">
 					<MDCard icon={account_circle} cardBackgroundColor="#FFFFFF" text="Nombre de salariés : :" textColor="#000000" value="150" />
 				</div>

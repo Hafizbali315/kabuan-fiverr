@@ -3,6 +3,7 @@ import './App.css'
 import Sidebar from './components/Sidebar'
 import AddPerimeter from './pages/addPerimeter'
 import AddReport from './pages/addReport'
+import Factors from './pages/factors'
 import Home from './pages/home'
 import Login from './pages/login'
 import Perimeter from './pages/perimeter'
@@ -26,6 +27,7 @@ function App() {
 							<Route exact path="/reports/add-report" component={AddReport} />
 							<Route exact path="/perimeters" component={Perimeter} />
 							<Route exact path="/perimeters/add-perimeter" component={AddPerimeter} />
+							<Route exact path="/factors" component={Factors} />
 						</div>
 					</div>
 				</Switch>

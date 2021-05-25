@@ -1,5 +1,7 @@
 import FactorsIcon from '../images/delete_icon.svg'
 
+// This component needs to update
+
 const FactorsListCard = () => {
 	return (
 		<div className="row my-3 factors_card">

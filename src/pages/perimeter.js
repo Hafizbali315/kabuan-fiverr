@@ -1,15 +1,15 @@
+import { Link } from 'react-router-dom'
+
+import FactorsCard from '../components/FactorsCard'
 import ProfileDropdown from '../components/ProfileDropdown'
 import SmallCard from '../components/SmallCard'
 
+import AnticlockwiseLine from '../images/anticlockwise-line.svg'
+import HandHeart from '../images/hand-heart.svg'
+import LayoutLine from '../images/perimeter.svg'
 import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
 import SmileyImg from '../images/smiley.svg'
-
-import HandHeart from '../images/hand-heart.svg'
-import LayoutLine from '../images/perimeter.svg'
-import AnticlockwiseLine from '../images/anticlockwise-line.svg'
-import ImpactListCard from '../components/ImpactListCard'
-import { Link } from 'react-router-dom'
 
 const Perimeter = () => {
 	return (
@@ -88,15 +88,27 @@ const Perimeter = () => {
 			</div>
 
 			{/* Impact List Card */}
-			<div className="row mt-4 perimeter_list_heading">
+			<div className="row mt-5 perimeter_list_heading">
 				<div className="col-lg-3 px-3">Type de facteur</div>
 				<div className="col-lg-3">Impact</div>
 				<div className="col-lg-2">Structure</div>
 				<div className="col-lg-4">Emissions</div>
 			</div>
-			<ImpactListCard typeOfFactor="Lorem Ipsum" impact="1 second view front salto HD" structure="Entreprise" emissions="2.4800" />
-			<ImpactListCard typeOfFactor="Lorem Ipsum" impact="1 second view front salto HD" structure="Entreprise" emissions="2.4800" />
-			<ImpactListCard typeOfFactor="Lorem Ipsum" impact="1 second view front salto HD" structure="Entreprise" emissions="2.4800" />
+
+			{/* Factors Cards Row */}
+			<div className="row">
+				<div className="col-12">
+					<FactorsCard typeOfFactor="Lorem Ipsum" impact="1 second view front salto HD" structure="Entreprise" emissions="2.4800" />
+				</div>
+
+				<div className="col-12">
+					<FactorsCard typeOfFactor="Lorem Ipsum" impact="1 second view front salto HD" structure="Entreprise" emissions="2.4800" />
+				</div>
+
+				<div className="col-12">
+					<FactorsCard typeOfFactor="Lorem Ipsum" impact="1 second view front salto HD" structure="Entreprise" emissions="2.4800" />
+				</div>
+			</div>
 		</div>
 	)
 }
