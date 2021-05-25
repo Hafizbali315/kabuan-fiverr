@@ -8,11 +8,6 @@
 	margin: 0;
 }
 
-.col {
-	padding: 0;
-	margin: 0;
-}
-
 .hr_line {
 	border: 1px dashed #b8b8b8;
 	/* width: 1193px; */
@@ -21,7 +16,7 @@
 
 h1 {
 	font-weight: bold;
-	font-size: 22.9044px;
+	font-size: 20.9044px;
 	color: #060e14;
 }
 
