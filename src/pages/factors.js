@@ -40,13 +40,15 @@ const Factors = () => {
 				</div>
 			</div>
 
-			{/* Factor List Heading */}
+			{/* Factors Card Heading */}
 			<div className="row mt-4 " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>
 				<div className="col-lg-3 px-3">Type de facteur</div>
 				<div className="col-lg-3">Impact</div>
 				<div className="col-lg-2">Statut</div>
 				<div className="col-lg-4">Emissions</div>
 			</div>
+
+			{/* Factors Cards */}
 			<div className="row mt-2">
 				<div className="col-12">
 					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 second view front salto HD" structure="Validé" emissions="2.4800" />

@@ -37,7 +37,7 @@ const Sidebar = () => {
 					Facteurs
 				</Link>
 
-				<Link className={`linkList ${isActive}`} to="/impact">
+				<Link className={`linkList ${isActive('/impacts') || isActive('/impacts/add-impact')}`} to="/impacts">
 					<img src={ImpactImg} alt="impact" />
 					Impact
 				</Link>
