@@ -1,4 +1,4 @@
-const XSCard = ({ icon, cardBackgroundColor, textColor }) => {
+const XSCard = ({ icon, text, cardBackgroundColor, textColor }) => {
 	return (
 		<div
 			style={{
@@ -15,7 +15,7 @@ const XSCard = ({ icon, cardBackgroundColor, textColor }) => {
 				<img src={icon} alt="img" />
 			</div>
 			<span className="px-3" style={{ fontWeight: '600', fontSize: '14px' }}>
-				Entreprise
+				{text}
 			</span>
 		</div>
 	)

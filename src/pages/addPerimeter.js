@@ -28,80 +28,80 @@ const AddPerimeter = () => {
 					</p>
 				</div>
 				<div className="col-6">
-					<button style={{ float: 'right', backgroundColor: '#63DDCF' }} className="custom_btn mt-2">
+					<button style={{ float: 'right', backgroundColor: '#63DDCF' }} className="mt-2 custom_btn">
 						Enregistrer
 					</button>
 				</div>
 			</div>
 
 			{/* Type of perimeter */}
-			<div className="row mt-5">
+			<div className="mt-5 row">
 				<div className="col">
 					<h1>Type de périmètre</h1>
 				</div>
 			</div>
-			<div className="row mt-3">
-				<div className="col-lg-3 col-md-6 col-12 mt-lg-0 mt-2">
-					<XSCard icon={Remote_Control_line} cardBackgroundColor="#000000" textColor="#FFFFFF" />
+			<div className="mt-3 row">
+				<div className="mt-2 col-lg-3 col-md-6 col-12 mt-lg-0">
+					<XSCard icon={Remote_Control_line} text="Enterprice" cardBackgroundColor="#000000" textColor="#FFFFFF" />
 				</div>
 
-				<div className="col-lg-3 col-md-6 mt-lg-0 mt-2 col-12">
-					<XSCard icon={Swap_Box_Line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
+				<div className="mt-2 col-lg-3 col-md-6 mt-lg-0 col-12">
+					<XSCard icon={Swap_Box_Line} text="Enterprice" cardBackgroundColor="#FFFFFF" textColor="#000000" />
 				</div>
 
-				<div className="col-lg-3 col-md-6 col-12 mt-lg-0 mt-2">
-					<XSCard icon={map_line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
+				<div className="mt-2 col-lg-3 col-md-6 col-12 mt-lg-0">
+					<XSCard icon={map_line} text="Enterprice" cardBackgroundColor="#FFFFFF" textColor="#000000" />
 				</div>
 
-				<div className="col-lg-3 col-md-6 col-12 mt-lg-0 mt-2">
-					<XSCard icon={navigation_line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
+				<div className="mt-2 col-lg-3 col-md-6 col-12 mt-lg-0">
+					<XSCard icon={navigation_line} text="Enterprice" cardBackgroundColor="#FFFFFF" textColor="#000000" />
 				</div>
 			</div>
 
 			{/* General Information */}
-			<div className="row mt-5">
+			<div className="mt-5 row">
 				<div className="col">
 					<h1>Information générale</h1>
 				</div>
 			</div>
-			<div className="row mt-3">
-				<div className="col-lg-6 col-12 mt-md-0 mt-2">
+			<div className="mt-3 row">
+				<div className="mt-2 col-lg-6 col-12 mt-md-0">
 					<MDCard icon={price_tag} cardBackgroundColor="#FFFFFF" textColor="#000000" value="Plateforme" text="Nom du périmètre :" />
 				</div>
 
-				<div className="col-lg-6  col-12 mt-md-0 mt-2">
+				<div className="mt-2 col-lg-6 col-12 mt-md-0">
 					<MDCard icon={map_line} cardBackgroundColor="#FFFFFF" textColor="#000000" value="Boulogne Billancourt" text="Localisation :" />
 				</div>
 			</div>
 
 			{/* Activity information */}
-			<div className="row mt-5">
+			<div className="mt-5 row">
 				<div className="col">
 					<h1>Information d’activité</h1>
 				</div>
 			</div>
-			<div className="row mt-3">
-				<div className="col-lg-6 col-12 mt-md-0 mt-2">
+			<div className="mt-3 row">
+				<div className="mt-2 col-lg-6 col-12 mt-md-0">
 					<MDCard icon={bill_line} cardBackgroundColor="#FFFFFF" text="Type d’activité :" textColor="#000000" value="Numérique" />
 				</div>
 
-				<div className="col-lg-6  col-12 mt-md-0 mt-2">
+				<div className="mt-2 col-lg-6 col-12 mt-md-0">
 					<MDCard icon={dvd_line} cardBackgroundColor="#FFFFFF" textColor="#000000" value="Fioul" text="Type d’activité :" />
 				</div>
 			</div>
 
 			{/* Employee  information */}
-			<div className="row mt-5">
+			<div className="mt-5 row">
 				<div className="col">
 					<h1>Information salariés</h1>
 				</div>
 			</div>
-			<div className="row mt-3 mb-4">
-				<div className="col-lg-6 col-12 mt-md-0 mt-2">
+			<div className="mt-3 mb-4 row">
+				<div className="mt-2 col-lg-6 col-12 mt-md-0">
 					<MDCard icon={account_circle} cardBackgroundColor="#FFFFFF" text="Nombre de salariés : :" textColor="#000000" value="150" />
 				</div>
 
-				<div className="col-lg-6  col-12 mt-md-0 mt-2">
+				<div className="mt-2 col-lg-6 col-12 mt-md-0">
 					<MDCard icon={contacts_line} cardBackgroundColor="#FFFFFF" textColor="#000000" text="Pourcentage télétravail :" value="15%" />
 				</div>
 			</div>
