@@ -95,12 +95,12 @@ const AddImpact = () => {
 			<div className="mt-5 row " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>
 				<div className="px-3 col-lg-3">Type de facteur</div>
 				<div className="col-lg-3">Impact</div>
-				<div className="col-lg-2">Statut</div>
+				<div className="col-lg-2">Imputation</div>
 				<div className="col-lg-4">Emissions</div>
 			</div>
 			<div className="mt-2 row">
 				<div className="col-12">
-					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 second view front salto HD" structure="Validé" emissions="2.4800" />
+					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 second view front salto HD" structure="Date" emissions="2.4800" />
 				</div>
 			</div>
 

@@ -5,6 +5,7 @@ import AddFactors from './pages/addFactors'
 import AddImpact from './pages/addImpact'
 import AddPerimeter from './pages/addPerimeter'
 import AddReport from './pages/addReport'
+import Contribution from './pages/contribution'
 import Factors from './pages/factors'
 import Home from './pages/home'
 import Impacts from './pages/impacts'
@@ -34,6 +35,7 @@ function App() {
 							<Route exact path="/factors/add-factor" component={AddFactors} />
 							<Route exact path="/impacts" component={Impacts} />
 							<Route exact path="/impacts/add-impact" component={AddImpact} />
+							<Route exact path="/contribution" component={Contribution} />
 						</div>
 					</div>
 				</Switch>

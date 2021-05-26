@@ -47,7 +47,7 @@ const Sidebar = () => {
 					Evaluation
 				</Link>
 
-				<Link className={`linkList ${isActive}`} to="/contribution">
+				<Link className={`linkList ${isActive('/contribution')}`} to="/contribution">
 					<img src={EarthImg} alt="EarthImg" />
 					Contribution
 				</Link>
