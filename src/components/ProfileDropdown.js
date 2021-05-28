@@ -11,9 +11,9 @@ const ProfileDropdown = () => {
 				style={{
 					outline: 'none',
 					width: '200px',
+					backgroundColor: '#f9f9f9',
 					display: 'flex',
 					flexDirection: 'row',
-					backgroundColor: '#FFFFFF',
 					border: 'none',
 					marginTop: '10px',
 				}}

@@ -13,9 +13,7 @@ const Contribution = () => {
 			<div className="row" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12" style={{ display: 'flex', alignItems: 'center' }}>
 					<img src={MenuLineImg} alt="menuImg" />
-					<p style={{ fontSize: '14px', color: '#060e14', paddingTop: '16px', paddingLeft: '25px', opacity: 0.5 }}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit
-					</p>
+					<input className="search_input" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ? 😃" />
 				</div>
 
 				<div className="col-md-2 col-12">

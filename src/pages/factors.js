@@ -14,7 +14,7 @@ const Factors = () => {
 					<img src={MenuLineImg} alt="menuImg" />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					<img src={SearchIcon} alt="SearchIcon" />
-					<p style={{ fontSize: '14px', color: '#060e14', paddingTop: '18px', paddingLeft: '25px', opacity: 0.5 }}>Rechercher un facteur</p>
+					<input className="search_input" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ? 😃" />
 				</div>
 
 				<div className="col-md-2 col-12">

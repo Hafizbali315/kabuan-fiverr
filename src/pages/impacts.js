@@ -9,7 +9,6 @@ import HandHeart from '../images/hand-heart.svg'
 import LayoutLine from '../images/perimeter.svg'
 import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
-import SmileyImg from '../images/smiley.svg'
 
 const Impacts = () => {
 	return (
@@ -19,9 +18,7 @@ const Impacts = () => {
 					<img src={MenuLineImg} alt="menuImg" />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					<img src={SearchIcon} alt="SearchIcon" />
-					<p>
-						Rechercher un impact <img src={SmileyImg} alt="smileyImg" />
-					</p>
+					<input className="search_input" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ? 😃" />
 				</div>
 
 				<div className="col-md-2 col-12">

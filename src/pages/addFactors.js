@@ -17,13 +17,14 @@ const AddFactors = () => {
 			<div className="row">
 				<div className="col-6" style={{ display: 'flex', alignItems: 'center' }}>
 					<Link to="/factors" className="">
-						<button style={{ backgroundColor: '#132A3A' }} className="custom_btn">
+						<button
+							style={{ backgroundColor: '#132A3A', height: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+							className="custom_btn"
+						>
 							<span className="arrowLeft"></span> Retour
 						</button>
 					</Link>
-					<p style={{ fontSize: '14px', color: '#060e14', paddingTop: '18px', paddingLeft: '25px', opacity: 0.5 }}>
-						Facteur personnalisé/id20199
-					</p>
+					<input className="search_input" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ? 😃" />
 				</div>
 				<div className="col-6">
 					<button style={{ float: 'right', backgroundColor: '#63DDCF' }} className="custom_btn mt-2">

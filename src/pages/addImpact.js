@@ -18,13 +18,14 @@ const AddImpact = () => {
 			<div className="row">
 				<div className="col-6" style={{ display: 'flex', alignItems: 'center' }}>
 					<Link to="/impacts" className="">
-						<button style={{ backgroundColor: '#132A3A' }} className="custom_btn">
+						<button
+							style={{ backgroundColor: '#132A3A', height: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+							className="custom_btn"
+						>
 							<span className="arrowLeft"></span> Retour
 						</button>
 					</Link>
-					<p style={{ fontWeight: 'normal', fontSize: '14', color: '#060E14', opacity: '0.5', paddingTop: '17px', paddingLeft: '30px' }}>
-						Périmètre/id20199
-					</p>
+					<input className="search_input" placeholder="Périmètre/id20199" />
 				</div>
 				<div className="col-6">
 					<button style={{ float: 'right', backgroundColor: '#63DDCF' }} className="mt-2 custom_btn">
