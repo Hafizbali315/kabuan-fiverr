@@ -47,13 +47,22 @@ const Home = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Progression */}
 			<div className="mt-4 mb-2 row progression_section">
 				<h1>
 					Progression <div className="progression_value">60%</div>
 				</h1>
 			</div>
-			<ProgressBar done="60%" />
+
+			<div className="row">
+				<div className="col-lg-12">
+					<ProgressBar done="60%" />
+				</div>
+			</div>
+
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
 
 			{/* HUB Printee */}
 			<div className="mt-4 row">

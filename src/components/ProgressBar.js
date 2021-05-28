@@ -1,4 +1,5 @@
 import ProgressDot from '../images/progressDot.svg'
+import progressDotWhite from '../images/progressDotWhite.svg'
 
 const ProgressBar = ({ done }) => {
 	return (
@@ -10,16 +11,16 @@ const ProgressBar = ({ done }) => {
 				<div className="progress_container">
 					<ul>
 						<li>
-							<img src={ProgressDot} alt="img" />
+							<img src={progressDotWhite} alt="img" />
 
 							<p>Définir mon périmètre</p>
 						</li>
 						<li>
-							<img src={ProgressDot} alt="img" />
+							<img src={progressDotWhite} alt="img" />
 							<p>Créer mon facteur</p>
 						</li>
 						<li>
-							<img src={ProgressDot} alt="img" />
+							<img src={progressDotWhite} alt="img" />
 							<p>Ajouter un impact</p>
 						</li>
 						<li>
