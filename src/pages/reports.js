@@ -3,7 +3,6 @@ import ProfileDropdown from '../components/ProfileDropdown'
 import ReportListCard from '../components/ReportListCard'
 import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
-import SmileyImg from '../images/smiley.svg'
 
 const Reports = () => {
 	return (
@@ -12,11 +11,9 @@ const Reports = () => {
 			<div className="row reports_header" style={{ justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12 reports_search">
 					<img src={MenuLineImg} alt="menuImg" />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp;
 					<img src={SearchIcon} alt="SearchIcon" />
-					<p>
-						Bienvenue Alexandre, comment allez-vous aujourd’hui ? <img src={SmileyImg} alt="smileyImg" />
-					</p>
+					<input type="text" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ?  😃" className="search_input" />
 				</div>
 
 				<div className="col-md-2 col-12">

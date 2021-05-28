@@ -21,11 +21,11 @@ function App() {
 					<Route exact path="/login" component={Login} />
 
 					<div className="row">
-						<div className="col-2">
+						<div className="col-lg-2" style={{ position: 'relative' }}>
 							<Sidebar />
 						</div>
 
-						<div className="col-10" style={{ backgroundColor: '#f9f9f9' }}>
+						<div className="col-lg-10" style={{ backgroundColor: '#f9f9f9' }}>
 							<Route exact path="/" component={Home} />
 							<Route exact path="/reports" component={Reports} />
 							<Route exact path="/reports/add-report" component={AddReport} />

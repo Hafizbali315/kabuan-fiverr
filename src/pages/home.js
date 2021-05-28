@@ -1,5 +1,4 @@
 import MenuLineImg from '../images/menulines.svg'
-import SmileyImg from '../images/smiley.svg'
 import SmallCard from '../components/SmallCard'
 import HandHeart from '../images/hand-heart.svg'
 import LayoutLine from '../images/perimeter.svg'
@@ -17,18 +16,18 @@ const Home = () => {
 	return (
 		<div className="container my-4">
 			{/* Home Header */}
-			<div className="row home_header" style={{ justifyContent: 'space-between' }}>
+			<div className="row my-4" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12 home_search">
 					<img src={MenuLineImg} alt="menuImg" />
-					<p>
-						Bienvenue Alexandre, comment allez-vous aujourd’hui ? <img src={SmileyImg} alt="smileyImg" />
-					</p>
+					<input className="search_input" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ? 😃" />
 				</div>
 
 				<div className="col-md-2 col-12">
 					<ProfileDropdown />
 				</div>
 			</div>
+
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
 
 			{/*? Synthèse impact ? */}
 			<div className="mt-4 row " style={{ alignItems: 'center' }}>

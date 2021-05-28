@@ -15,13 +15,19 @@ const AddReport = () => {
 			<div className="row">
 				<div className="col-6" style={{ display: 'flex', alignItems: 'center' }}>
 					<Link to="/reports" className="">
-						<button style={{ backgroundColor: '#132A3A', height: '40px' }} className="custom_btn">
+						{/* <input type="button" value=" Hello" className="custom_btn" style={{ backgroundColor: '#132A3A', height: '40px' }} /> */}
+						<button
+							style={{ backgroundColor: '#132A3A', height: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+							className="custom_btn"
+						>
 							<span className="arrowLeft"></span> Retour
 						</button>
 					</Link>
-					<p style={{ fontWeight: 'normal', fontSize: '14', color: '#060E14', opacity: '0.5', paddingTop: '17px', paddingLeft: '30px' }}>
+					<input type="text" className="search_input" placeholder="Rapport/id20199" />
+
+					{/* <p style={{ fontWeight: 'normal', fontSize: '14', color: '#060E14', opacity: '0.5', paddingTop: '17px', paddingLeft: '30px' }}>
 						Rapport/id20199
-					</p>
+					</p> */}
 				</div>
 				<div className="col-6">
 					<button style={{ float: 'right', backgroundColor: '#63DDCF', height: '40px' }} className="custom_btn">

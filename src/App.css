@@ -10,13 +10,14 @@
 
 .hr_line {
 	border: 1px dashed #b8b8b8;
-	/* width: 1193px; */
 	height: 0px;
 }
 
 h1 {
+	font-family: Poppins;
+	font-style: normal;
 	font-weight: bold;
-	font-size: 20.9044px;
+	font-size: 22.9044px;
 	color: #060e14;
 }
 
@@ -85,6 +86,18 @@ h1 {
 	align-items: center;
 	margin-left: 25px;
 	margin-top: -2px;
+}
+
+.search_input {
+	color: #060e14;
+	font-size: 14px;
+	padding: 10px;
+	opacity: 0.5;
+	outline: none;
+	border: none;
+	margin-left: 22px;
+	width: 500px;
+	margin-top: 5px;
 }
 
 @import './styles/login.css';

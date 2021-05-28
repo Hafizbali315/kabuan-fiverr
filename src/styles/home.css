@@ -32,15 +32,6 @@
 	padding-left: 14px;
 }
 
-.home_header {
-	display: flex;
-	align-items: center;
-}
-.home_header .home_search {
-	display: flex;
-	align-items: center;
-}
-
 .home_header p {
 	font-weight: normal;
 	font-size: 14.1298px;
