@@ -19,6 +19,17 @@
 	padding-left: 7px;
 }
 
+.profileDropdown a {
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.profileDropdown a:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
 .profileName span {
 	font-weight: normal;
 	font-size: 8.22466px;

@@ -5,7 +5,6 @@ const ProfileDropdown = () => {
 		<div className="profileDropdown dropdown">
 			<button
 				className=""
-				type="button"
 				id="dropdownMenuButton"
 				data-toggle="dropdown"
 				style={{
@@ -32,12 +31,31 @@ const ProfileDropdown = () => {
 
 			<div className="dropdown-menu " style={{ marginTop: '15px' }} aria-labelledby="dropdownMenuButton">
 				<div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-					<h6>Link 1</h6>
-					<h6>Link 2</h6>
-					<h6>Link 3</h6>
-					<h6>Link 4</h6>
+					<a className="dropdown-item" href="#1">
+						Link1
+					</a>
+
+					<a className="dropdown-item" href="#1">
+						Link2
+					</a>
+
+					<a className="dropdown-item" href="#1">
+						Link3
+					</a>
 				</div>
 			</div>
+
+			{/* <div class="dropdown-menu" style={{ marginTop: '10px' }}>
+				<a className="dropdown-item" href="#1">
+					Action
+				</a>
+				<a className="dropdown-item" href="#2">
+					Another action
+				</a>
+				<a className="dropdown-item" href="#3">
+					Something else here
+				</a>
+			</div> */}
 		</div>
 	)
 }
