@@ -23,7 +23,7 @@ const Contribution = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Contribute to a project */}
 
@@ -44,7 +44,7 @@ const Contribution = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			<div className="mt-4 row">
 				<div className="col">

@@ -29,7 +29,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/*? Synthèse impact ? */}
 			<div className="mt-4 row " style={{ alignItems: 'center' }}>
@@ -49,7 +49,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Progression */}
 			<div className="mt-4 mb-2 row progression_section">
@@ -64,7 +64,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* HUB Printee */}
 			<div className="mt-4 row">

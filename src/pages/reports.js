@@ -25,7 +25,7 @@ const Reports = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* List of Reports */}
 			<div className="my-3 row reports_list">
@@ -43,7 +43,7 @@ const Reports = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Report Lists Cards Heading */}
 			<div className="mt-4 row reports_list_heading">

@@ -24,7 +24,7 @@ const Factors = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* List of custom factors */}
 
@@ -44,7 +44,7 @@ const Factors = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Factors Card Heading */}
 			<div className="mt-4 row " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>

@@ -47,7 +47,7 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Type of perimeter */}
 			<div className="my-4 row">
@@ -70,7 +70,7 @@ const AddPerimeter = () => {
 				))}
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* General Information */}
 			<div className="my-4 row">
@@ -88,7 +88,7 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Activity information */}
 			<div className="my-4 row">
@@ -106,7 +106,7 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Employee  information */}
 			<div className="my-4 row">
@@ -124,7 +124,7 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			<div className="my-4 row">
 				<div className="col">

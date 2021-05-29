@@ -35,7 +35,7 @@ const AddReport = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Synthèse impact */}
 			<div className="my-4 row">
@@ -53,7 +53,7 @@ const AddReport = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			<div className="my-4 row">
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
@@ -86,7 +86,7 @@ const AddReport = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* List of Factors */}
 			<div className="my-4 row reports_list">
@@ -95,7 +95,7 @@ const AddReport = () => {
 				</h1>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			<div className="mt-4 row factors_list_headeings">
 				<div className="col-lg-3">Type de facteur</div>

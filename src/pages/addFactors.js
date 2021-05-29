@@ -39,7 +39,7 @@ const AddFactors = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/*? Synthèse impact ? */}
 			<div className="my-4 row " style={{ alignItems: 'center' }}>
@@ -59,7 +59,7 @@ const AddFactors = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* General Information Heading and Buttons */}
 			<div className="my-4 row">
@@ -84,14 +84,14 @@ const AddFactors = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Composition */}
 			<div className="my-4 row">
 				<h1>Composition</h1>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Factors Card Headings */}
 			<div className="mt-4 row " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>
@@ -108,7 +108,7 @@ const AddFactors = () => {
 				</div>
 			</div>
 
-			<img src={hr_line} alt="hr_line" />
+			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			<div className="my-4 row">
 				<div className="col">
