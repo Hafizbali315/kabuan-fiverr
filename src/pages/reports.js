@@ -4,11 +4,15 @@ import ReportListCard from '../components/ReportListCard'
 import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
 
+import line_chart_line from '../images/line-chart-line.svg'
+
+import hr_line from '../images/hr_line.svg'
+
 const Reports = () => {
 	return (
 		<div className="container my-4">
 			{/* Reports Header */}
-			<div className="my-4 row reports_header" style={{ justifyContent: 'space-between' }}>
+			<div className="mt-4 mb-3 row reports_header" style={{ justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12 reports_search">
 					<img src={MenuLineImg} alt="menuImg" />
 					&nbsp; &nbsp; &nbsp; &nbsp;
@@ -21,17 +25,17 @@ const Reports = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* List of Reports */}
-			<div className="my-4  row reports_list">
+			<div className="my-3 row reports_list">
 				<div className="col">
 					<h1>
 						Liste des rapports <div className="total_reports">5</div>
 					</h1>
 				</div>
 				<div className="col ">
-					<Link to="/reports/add-report">
+					<Link to="/reports/add-report" style={{ textDecoration: 'none' }}>
 						<button className="custom_btn" style={{ float: 'right', backgroundColor: '#63DDCF' }}>
 							Ajouter un rapport
 						</button>
@@ -39,7 +43,7 @@ const Reports = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Report Lists Cards Heading */}
 			<div className="mt-4 row reports_list_heading">
@@ -50,11 +54,11 @@ const Reports = () => {
 			</div>
 
 			{/* Report Lists Cards */}
-			<ReportListCard reportName="Paramètre digital" editor="Alexandre" protocol="GHG" emissions="2.4800" />
-			<ReportListCard reportName="Bilan carbone annuel" editor="Nicolas" protocol="BC" emissions="2.4800" />
-			<ReportListCard reportName="Rapport test" editor="Nicolas" protocol="ADEME" emissions="2.4800" />
-			<ReportListCard reportName="Rapport physique" editor="Alexandre" protocol="GHG" emissions="2.4800" />
-			<ReportListCard reportName="Rapport marketing" editor="Alexandre" protocol="ADEME" emissions="2.4800" />
+			<ReportListCard icon={line_chart_line} reportName="Paramètre digital" editor="Alexandre" protocol="GHG" emissions="2.4800" />
+			<ReportListCard icon={line_chart_line} reportName="Bilan carbone annuel" editor="Nicolas" protocol="BC" emissions="2.4800" />
+			<ReportListCard icon={line_chart_line} reportName="Rapport test" editor="Nicolas" protocol="ADEME" emissions="2.4800" />
+			<ReportListCard icon={line_chart_line} reportName="Rapport physique" editor="Alexandre" protocol="GHG" emissions="2.4800" />
+			<ReportListCard icon={line_chart_line} reportName="Rapport marketing" editor="Alexandre" protocol="ADEME" emissions="2.4800" />
 		</div>
 	)
 }

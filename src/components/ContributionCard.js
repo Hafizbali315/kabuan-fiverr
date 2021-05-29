@@ -10,7 +10,7 @@ const ContributionCard = ({ button1Text, button2Text, description, heading }) =>
 				<div className="card-body">
 					<h4
 						className="card-title"
-						style={{ fontWeight: 600, fontSize: '16px', color: '#060E14', paddingRight: '30px', paddingTop: '10px' }}
+						style={{ fontWeight: 600, fontSize: '15px', color: '#060E14', paddingRight: '30px', paddingTop: '10px' }}
 					>
 						{heading}
 					</h4>

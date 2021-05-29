@@ -10,13 +10,15 @@ import file_edit_line from '../images/file-edit-line.svg'
 import price_tag from '../images/price-tag-3-line.svg'
 import FactorsCard from '../components/FactorsCard'
 
+import hr_line from '../images/hr_line.svg'
+
 const AddFactors = () => {
 	return (
 		<div className="container my-4">
 			{/* Add factor header */}
 			<div className="my-4 row">
 				<div className="col-6" style={{ display: 'flex', alignItems: 'center' }}>
-					<Link to="/factors" className="">
+					<Link to="/factors" className="" style={{ textDecoration: 'none' }}>
 						<button
 							style={{ backgroundColor: '#132A3A', height: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
 							className="custom_btn"
@@ -36,7 +38,7 @@ const AddFactors = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/*? Synthèse impact ? */}
 			<div className="my-4 row " style={{ alignItems: 'center' }}>
@@ -56,7 +58,7 @@ const AddFactors = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* General Information Heading and Buttons */}
 			<div className="my-4 row">
@@ -87,14 +89,14 @@ const AddFactors = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Composition */}
 			<div className="my-4 row">
 				<h1>Composition</h1>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Factors Card Headings */}
 			<div className="mt-4 row " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>
@@ -111,7 +113,8 @@ const AddFactors = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
+
 			<div className="my-4 row">
 				<div className="col">
 					<button style={{ backgroundColor: '#63DDCF' }} className="mt-2 custom_btn">

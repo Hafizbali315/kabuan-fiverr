@@ -11,13 +11,15 @@ import dvd_line from '../images/dvd-line.svg'
 import add_circle_line from '../images/add-circle-line.svg'
 import FactorsCard from '../components/FactorsCard'
 
+import hr_line from '../images/hr_line.svg'
+
 const AddImpact = () => {
 	return (
 		<div className="container my-4">
 			{/* Add Impact header */}
 			<div className="my-4 row">
 				<div className="col-6" style={{ display: 'flex', alignItems: 'center' }}>
-					<Link to="/impacts" className="">
+					<Link to="/impacts" className="" style={{ textDecoration: 'none' }}>
 						<button
 							style={{ backgroundColor: '#132A3A', height: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
 							className="custom_btn"
@@ -34,7 +36,7 @@ const AddImpact = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Type the impact */}
 			<div className="mt-4 row">
@@ -76,7 +78,7 @@ const AddImpact = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Composition Header and Buttons */}
 			<div className="my-4 row">
@@ -96,7 +98,7 @@ const AddImpact = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Composition Card Heading */}
 			<div className="mt-4 row " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>
@@ -111,7 +113,7 @@ const AddImpact = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Record Button */}
 			<div className="mt-4 row">

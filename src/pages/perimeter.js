@@ -10,6 +10,8 @@ import LayoutLine from '../images/perimeter.svg'
 import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
 
+import hr_line from '../images/hr_line.svg'
+
 const Perimeter = () => {
 	return (
 		<div className="container my-4">
@@ -26,7 +28,7 @@ const Perimeter = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/*? Synthèse impact ? */}
 			<div className="my-4 row " style={{ alignItems: 'center' }}>
@@ -35,7 +37,7 @@ const Perimeter = () => {
 				</div>
 
 				<div className="col ">
-					<Link to="/perimeters/add-perimeter">
+					<Link to="/perimeters/add-perimeter" style={{ textDecoration: 'none' }}>
 						<button className="custom_btn" style={{ float: 'right', backgroundColor: '#63DDCF' }}>
 							Ajouter un rapport
 						</button>
@@ -43,7 +45,7 @@ const Perimeter = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			<div className="mt-5 row">
 				<div className="col">
@@ -65,7 +67,7 @@ const Perimeter = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* List of Impacts */}
 			<div className="my-5 row">
@@ -97,7 +99,7 @@ const Perimeter = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Impact List Card */}
 			<div className="mt-5 row perimeter_list_heading">

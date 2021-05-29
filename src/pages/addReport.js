@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import SmallCard from '../components/SmallCard'
-import HandHeart from '../images/hand-heart.svg'
+import hand_heart from '../images/hand_heart.svg'
 import LayoutLine from '../images/perimeter.svg'
 import AnticlockwiseLine from '../images/anticlockwise-line.svg'
 import BarChart from '../components/BarChart'
@@ -8,13 +8,15 @@ import ByTypeCard from '../components/ByTypeCard'
 import ArrowChart from '../components/ArrowChart'
 import FactorsListCard from '../components/FactorsListCard'
 
+import hr_line from '../images/hr_line.svg'
+
 const AddReport = () => {
 	return (
 		<div className="container mt-4">
 			{/* Add Report Header */}
 			<div className="my-4 row">
 				<div className="col-6" style={{ display: 'flex', alignItems: 'center' }}>
-					<Link to="/reports" className="">
+					<Link to="/reports" className="" style={{ textDecoration: 'none' }}>
 						{/* <input type="button" value=" Hello" className="custom_btn" style={{ backgroundColor: '#132A3A', height: '40px' }} /> */}
 						<button
 							style={{ backgroundColor: '#132A3A', height: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
@@ -32,7 +34,7 @@ const AddReport = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Synthèse impact */}
 			<div className="my-4 row">
@@ -55,11 +57,11 @@ const AddReport = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			<div className="my-4 row">
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
-					<SmallCard text="Impact Total :" icon={HandHeart} value="40 gCO2" />
+					<SmallCard text="Impact Total :" icon={hand_heart} value="40 gCO2" />
 				</div>
 
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
@@ -88,7 +90,7 @@ const AddReport = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* List of Factors */}
 			<div className="my-4 row reports_list">
@@ -97,7 +99,7 @@ const AddReport = () => {
 				</h1>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			<div className="mt-4 row factors_list_headeings">
 				<div className="col-lg-3">Type de facteur</div>

@@ -23,8 +23,9 @@
 	color: #060e14;
 }
 .smallCard h3 {
+	padding-top: 10px;
+
+	font-style: normal;
 	font-weight: 600;
 	font-size: 15.0968px;
-	color: #060e14;
-	padding-top: 10px;
 }

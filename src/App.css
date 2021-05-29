@@ -8,17 +8,12 @@
 	margin: 0;
 }
 
-.hr_line {
-	border: 1px dashed #b8b8b8;
-	height: 0px;
-}
-
 h1 {
-	font-family: Poppins;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 22.9044px;
 	color: #060e14;
+	line-height: 23px;
 }
 
 .custom_btn {

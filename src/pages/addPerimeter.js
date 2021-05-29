@@ -12,13 +12,15 @@ import dvd_line from '../images/dvd-line.svg'
 import account_circle from '../images/account-circle-line.svg'
 import contacts_line from '../images/contacts-line.svg'
 
+import hr_line from '../images/hr_line.svg'
+
 const AddPerimeter = () => {
 	return (
 		<div className="container mt-4">
 			{/* Add perimeter header */}
 			<div className="my-4 row">
 				<div className="col-6" style={{ display: 'flex', alignItems: 'center' }}>
-					<Link to="/perimeters" className="">
+					<Link to="/perimeters" className="" style={{ textDecoration: 'none' }}>
 						<button
 							style={{ backgroundColor: '#132A3A', height: '40px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
 							className="custom_btn"
@@ -35,7 +37,7 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Type of perimeter */}
 			<div className="my-4 row">
@@ -61,7 +63,7 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* General Information */}
 			<div className="my-4 row">
@@ -79,7 +81,7 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Activity information */}
 			<div className="my-4 row">
@@ -97,7 +99,7 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Employee  information */}
 			<div className="my-4 row">
@@ -115,7 +117,7 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			<div className="my-4 row">
 				<div className="col">

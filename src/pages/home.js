@@ -1,6 +1,6 @@
 import MenuLineImg from '../images/menulines.svg'
 import SmallCard from '../components/SmallCard'
-import HandHeart from '../images/hand-heart.svg'
+import hand_heart from '../images/hand_heart.svg'
 import LayoutLine from '../images/perimeter.svg'
 import AnticlockwiseLine from '../images/anticlockwise-line.svg'
 import ProgressBar from '../components/ProgressBar'
@@ -11,6 +11,8 @@ import ImpactImg from '../images/equalizer.svg'
 import EvaluationImg from '../images/thumb.svg'
 import HeadphoneImg from '../images/headphone.svg'
 import ProfileDropdown from '../components/ProfileDropdown'
+
+import hr_line from '../images/hr_line.svg'
 
 const Home = () => {
 	return (
@@ -27,7 +29,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/*? Synthèse impact ? */}
 			<div className="mt-4 row " style={{ alignItems: 'center' }}>
@@ -35,7 +37,7 @@ const Home = () => {
 			</div>
 			<div className="mt-1 row">
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
-					<SmallCard text="Impact Total :" icon={HandHeart} value="40 gCO2" />
+					<SmallCard text="Impact Total :" icon={hand_heart} value="40 gCO2" />
 				</div>
 
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
@@ -47,7 +49,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Progression */}
 			<div className="mt-4 mb-2 row progression_section">
@@ -62,7 +64,7 @@ const Home = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* HUB Printee */}
 			<div className="mt-4 row">

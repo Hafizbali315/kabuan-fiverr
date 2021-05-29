@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom'
-import LayoutLine from '../images/perimeter.svg'
 
-const ReportListCard = ({ reportName, editor, protocol, emissions }) => {
+const ReportListCard = ({ reportName, editor, protocol, emissions, icon }) => {
 	return (
 		<div className="mt-4 row reports_card">
 			<div className="col-lg-4" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
 				<div className="mx-2 icon_contaniner">
-					<img src={LayoutLine} alt="img" />
+					<img src={icon} alt="img" />
 				</div>
 				<span className="px-3">{reportName}</span>
 			</div>

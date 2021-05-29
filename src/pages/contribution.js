@@ -6,11 +6,13 @@ import MenuLineImg from '../images/menulines.svg'
 import VectorImg from '../images/vector.svg'
 import ContributionCard from '../components/ContributionCard'
 
+import hr_line from '../images/hr_line.svg'
+
 const Contribution = () => {
 	return (
 		<div className="container my-4">
 			{/* Contribution page header */}
-			<div className="my-4 row" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
+			<div className="mt-4 mb-3 row" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12" style={{ display: 'flex', alignItems: 'center' }}>
 					<img src={MenuLineImg} alt="menuImg" />
 					<input className="search_input" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
@@ -21,12 +23,12 @@ const Contribution = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Contribute to a project */}
 
 			{/* Header and Button */}
-			<div className="my-4 row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
+			<div className="my-2 row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
 				<div className="col">
 					<h1 style={{ display: 'flex', alignItems: 'center' }}>
 						Contribuer à un projet{' '}
@@ -34,7 +36,7 @@ const Contribution = () => {
 					</h1>
 				</div>
 				<div className="col ">
-					<Link to="/my-contributions">
+					<Link to="/my-contributions" style={{ textDecoration: 'none' }}>
 						<button className="custom_btn" style={{ float: 'right', backgroundColor: '#132A3A', padding: '16px' }}>
 							Voir mes contributions
 						</button>
@@ -42,7 +44,7 @@ const Contribution = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			<div className="mt-4 row">
 				<div className="col">

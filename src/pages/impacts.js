@@ -10,6 +10,8 @@ import LayoutLine from '../images/perimeter.svg'
 import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
 
+import hr_line from '../images/hr_line.svg'
+
 const Impacts = () => {
 	return (
 		<div className="container my-4">
@@ -25,7 +27,9 @@ const Impacts = () => {
 					<ProfileDropdown />
 				</div>
 			</div>
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
+			<img src={hr_line} alt="hr_line" />
+
 			{/*? Synthèse impact ? */}
 			<div className="my-4 row " style={{ alignItems: 'center' }}>
 				<div className="col">
@@ -33,7 +37,7 @@ const Impacts = () => {
 				</div>
 
 				<div className="col ">
-					<Link to="/impacts/add-impact">
+					<Link to="/impacts/add-impact" style={{ textDecoration: 'none' }}>
 						<button className="custom_btn" style={{ float: 'right', backgroundColor: '#63DDCF' }}>
 							Ajouter un impact
 						</button>
@@ -41,7 +45,7 @@ const Impacts = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			<div className="my-4 row">
 				<div className="col">
@@ -62,7 +66,7 @@ const Impacts = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* List of Impacts */}
 			<div className="my-4 row">
@@ -94,7 +98,7 @@ const Impacts = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Impact List Card */}
 			<div className="mt-4 row perimeter_list_heading">

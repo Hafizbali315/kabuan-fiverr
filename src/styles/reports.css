@@ -45,9 +45,9 @@
 	display: flex;
 	align-items: center;
 	height: 75px;
-	background: #ffffff;
+	background-color: #ffffff;
 	border-radius: 3px;
-	font-weight: 550;
-	font-size: 12.0968px;
+	font-weight: 600;
+	font-size: 15.0968px;
 	color: #060e14;
 }

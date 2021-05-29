@@ -6,6 +6,8 @@ import FactorsCard from '../components/FactorsCard'
 import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
 
+import hr_line from '../images/hr_line.svg'
+
 const Factors = () => {
 	return (
 		<div className="container my-4">
@@ -22,7 +24,7 @@ const Factors = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* List of custom factors */}
 
@@ -34,7 +36,7 @@ const Factors = () => {
 					</h1>
 				</div>
 				<div className="col ">
-					<Link to="/factors/add-factor">
+					<Link to="/factors/add-factor" style={{ textDecoration: 'none' }}>
 						<button className="custom_btn" style={{ float: 'right', backgroundColor: '#63DDCF', padding: '16px' }}>
 							Ajouter un facteur personnalisé
 						</button>
@@ -42,7 +44,7 @@ const Factors = () => {
 				</div>
 			</div>
 
-			<hr style={{ border: '1px dashed #B8B8B8' }} />
+			<img src={hr_line} alt="hr_line" />
 
 			{/* Factors Card Heading */}
 			<div className="mt-4 row " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>
