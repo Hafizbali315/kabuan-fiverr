@@ -3,7 +3,7 @@ import ProfileDropdown from '../components/ProfileDropdown'
 
 import MenuLineImg from '../images/menulines.svg'
 
-import earth_line from '../images/earth-line.svg'
+import VectorImg from '../images/vector.svg'
 import ContributionCard from '../components/ContributionCard'
 
 const Contribution = () => {
@@ -29,7 +29,8 @@ const Contribution = () => {
 			<div className="my-4 row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
 				<div className="col">
 					<h1 style={{ display: 'flex', alignItems: 'center' }}>
-						Contribuer à un projet <img style={{ paddingLeft: '10px', paddingTop: '10px' }} src={earth_line} alt="img" />
+						Contribuer à un projet{' '}
+						<img style={{ paddingLeft: '15px', paddingTop: '2px', width: '40px', height: '40px' }} src={VectorImg} alt="img" />
 					</h1>
 				</div>
 				<div className="col ">
