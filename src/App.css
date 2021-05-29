@@ -97,6 +97,10 @@ h1 {
 	margin-top: 5px;
 }
 
+.xs_card {
+	cursor: pointer;
+}
+
 @import './styles/login.css';
 @import './styles/home.css';
 @import './styles/sidebar.css';

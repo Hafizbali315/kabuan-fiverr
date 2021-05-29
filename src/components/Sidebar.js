@@ -17,7 +17,7 @@ const Sidebar = () => {
 		}
 	}
 	return (
-		<div className="sidebar container-fluid mt-4">
+		<div className="mt-4 sidebar container-fluid">
 			<div className="row">
 				<div className="col">
 					<Link to="/" style={{ outline: 'none', textDecoration: 'none' }}>
@@ -26,7 +26,7 @@ const Sidebar = () => {
 				</div>
 			</div>
 
-			<div className="row my-4">
+			<div className="my-4 row">
 				<div className="col-12" style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
 					<Link className={`link_list ${isActive('/reports') || isActive('/reports/add-report')}`} to="/reports">
 						<div className="rectangle"></div>

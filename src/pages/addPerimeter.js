@@ -13,8 +13,18 @@ import account_circle from '../images/account-circle-line.svg'
 import contacts_line from '../images/contacts-line.svg'
 
 import hr_line from '../images/hr_line.svg'
+import { useState } from 'react'
 
 const AddPerimeter = () => {
+	const [selectedId, setSelectedId] = useState(null)
+
+	const XS_Card_Data = [
+		{ id: 1, icon: Remote_Control_line, text: 'Enterprice' },
+		{ id: 2, icon: Swap_Box_Line, text: 'Enterprice' },
+		{ id: 3, icon: map_line, text: 'Enterprice' },
+		{ id: 4, icon: navigation_line, text: 'Enterprice' },
+	]
+
 	return (
 		<div className="container mt-4">
 			{/* Add perimeter header */}
@@ -46,21 +56,18 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 			<div className="mt-3 mb-4 row">
-				<div className="mt-2 col-lg-3 col-md-6 col-12 mt-lg-0">
-					<XSCard icon={Remote_Control_line} text="Enterprice" cardBackgroundColor="#000000" textColor="#FFFFFF" />
-				</div>
-
-				<div className="mt-2 col-lg-3 col-md-6 mt-lg-0 col-12">
-					<XSCard icon={Swap_Box_Line} text="Enterprice" cardBackgroundColor="#FFFFFF" textColor="#000000" />
-				</div>
-
-				<div className="mt-2 col-lg-3 col-md-6 col-12 mt-lg-0">
-					<XSCard icon={map_line} text="Enterprice" cardBackgroundColor="#FFFFFF" textColor="#000000" />
-				</div>
-
-				<div className="mt-2 col-lg-3 col-md-6 col-12 mt-lg-0">
-					<XSCard icon={navigation_line} text="Enterprice" cardBackgroundColor="#FFFFFF" textColor="#000000" />
-				</div>
+				{XS_Card_Data.map((card) => (
+					<div className="mt-2 col-lg-3 col-md-6 col-12 mt-lg-0">
+						<XSCard
+							key={card.id}
+							onClick={() => setSelectedId(card.id)}
+							cardBackgroundColor={selectedId && selectedId === card.id ? '#000000' : '#ffffff'}
+							textColor={selectedId && selectedId === card.id ? '#ffffff' : '#000000'}
+							icon={card.icon}
+							text={card.text}
+						/>
+					</div>
+				))}
 			</div>
 
 			<img src={hr_line} alt="hr_line" />

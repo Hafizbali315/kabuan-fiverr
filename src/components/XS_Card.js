@@ -1,4 +1,4 @@
-const XSCard = ({ icon, text, cardBackgroundColor, textColor }) => {
+const XSCard = ({ icon, text, cardBackgroundColor, textColor, onClick }) => {
 	return (
 		<div
 			style={{
@@ -10,6 +10,8 @@ const XSCard = ({ icon, text, cardBackgroundColor, textColor }) => {
 				padding: '0 17px',
 				color: textColor,
 			}}
+			className="xs_card"
+			onClick={onClick}
 		>
 			<div className="icon_contaniner">
 				<img src={icon} alt="img" />

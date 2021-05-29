@@ -5,7 +5,8 @@ import ProfileDropdown from '../components/ProfileDropdown'
 import SmallCard from '../components/SmallCard'
 
 import AnticlockwiseLine from '../images/anticlockwise-line.svg'
-import HandHeart from '../images/hand-heart.svg'
+import hand_heart from '../images/hand_heart.svg'
+
 import LayoutLine from '../images/perimeter.svg'
 import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
@@ -54,7 +55,7 @@ const Impacts = () => {
 			</div>
 			<div className="mt-1 row">
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
-					<SmallCard text="Impact Total :" icon={HandHeart} value="40 gCO2" />
+					<SmallCard text="Impact Total :" icon={hand_heart} value="40 gCO2" />
 				</div>
 
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">

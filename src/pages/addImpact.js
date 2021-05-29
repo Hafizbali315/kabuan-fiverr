@@ -12,8 +12,23 @@ import add_circle_line from '../images/add-circle-line.svg'
 import FactorsCard from '../components/FactorsCard'
 
 import hr_line from '../images/hr_line.svg'
+import { useState } from 'react'
 
 const AddImpact = () => {
+	const [selectedId, setSelectedId] = useState(null)
+
+	const XS_Card_Data = [
+		{ id: 1, icon: base_station_line, text: 'Digital' },
+		{ id: 2, icon: shopping_cart_line, text: 'E-commerce' },
+		{ id: 3, icon: navigation_line, text: 'Logistique' },
+		{ id: 4, icon: recycle_line, text: 'Recyglage' },
+		{ id: 5, icon: exchange_dollar_line, text: 'Finance' },
+
+		{ id: 6, icon: bus_line, text: 'Transport' },
+		{ id: 7, icon: dvd_line, text: 'Energie' },
+		{ id: 8, icon: add_circle_line, text: 'Vos idées' },
+	]
+
 	return (
 		<div className="container my-4">
 			{/* Add Impact header */}
@@ -45,37 +60,17 @@ const AddImpact = () => {
 				</div>
 			</div>
 			<div className="mt-3 mb-4 row">
-				<div className="mt-3 col-lg-3 col-md-6 col-12">
-					<XSCard text="Digital" icon={base_station_line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
-				</div>
-
-				<div className="mt-3 col-lg-3 col-md-6 col-12">
-					<XSCard text="E-commerce" icon={shopping_cart_line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
-				</div>
-
-				<div className="mt-3 col-lg-3 col-md-6 col-12">
-					<XSCard text="Logistique" icon={navigation_line} cardBackgroundColor="#000000" textColor="#FFFFFF" />
-				</div>
-
-				<div className="mt-3 col-lg-3 col-md-6 col-12">
-					<XSCard text="Recyglage" icon={recycle_line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
-				</div>
-
-				<div className="mt-3 col-lg-3 col-md-6 col-12">
-					<XSCard text="Finance" icon={exchange_dollar_line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
-				</div>
-
-				<div className="mt-3 col-lg-3 col-md-6 col-12">
-					<XSCard text="Transport" icon={bus_line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
-				</div>
-
-				<div className="mt-3 col-lg-3 col-md-6 col-12">
-					<XSCard text="Energie" icon={dvd_line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
-				</div>
-
-				<div className="mt-3 col-lg-3 col-md-6 col-12">
-					<XSCard text="Vos idées" icon={add_circle_line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
-				</div>
+				{XS_Card_Data.map((card) => (
+					<div className="mt-3 col-lg-3 col-md-6 col-12" key={card.id}>
+						<XSCard
+							text={card.text}
+							icon={card.icon}
+							cardBackgroundColor={selectedId && selectedId === card.id ? '#000000' : '#ffffff'}
+							textColor={selectedId && selectedId === card.id ? '#ffffff' : '#000000'}
+							onClick={() => setSelectedId(card.id)}
+						/>
+					</div>
+				))}
 			</div>
 
 			<img src={hr_line} alt="hr_line" />
