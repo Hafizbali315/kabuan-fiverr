@@ -15,7 +15,7 @@ const AddImpact = () => {
 	return (
 		<div className="container my-4">
 			{/* Add Impact header */}
-			<div className="row">
+			<div className="my-4 row">
 				<div className="col-6" style={{ display: 'flex', alignItems: 'center' }}>
 					<Link to="/impacts" className="">
 						<button
@@ -34,13 +34,15 @@ const AddImpact = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Type the impact */}
-			<div className="mt-5 row">
+			<div className="mt-4 row">
 				<div className="col">
 					<h1>Type d’impact</h1>
 				</div>
 			</div>
-			<div className="row">
+			<div className="mt-3 mb-4 row">
 				<div className="mt-3 col-lg-3 col-md-6 col-12">
 					<XSCard text="Digital" icon={base_station_line} cardBackgroundColor="#FFFFFF" textColor="#000000" />
 				</div>
@@ -74,8 +76,10 @@ const AddImpact = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Composition Header and Buttons */}
-			<div className="mt-5 row">
+			<div className="my-4 row">
 				<div className="col-8" style={{ display: 'flex', alignItems: 'center' }}>
 					<h1>Composition</h1>
 				</div>
@@ -92,21 +96,25 @@ const AddImpact = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Composition Card Heading */}
-			<div className="mt-5 row " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>
+			<div className="mt-4 row " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>
 				<div className="px-3 col-lg-3">Type de facteur</div>
 				<div className="col-lg-3">Impact</div>
 				<div className="col-lg-2">Imputation</div>
 				<div className="col-lg-4">Emissions</div>
 			</div>
-			<div className="mt-2 row">
+			<div className="mb-4 row">
 				<div className="col-12">
 					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 second view front salto HD" structure="Date" emissions="2.4800" />
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Record Button */}
-			<div className="mt-5 row">
+			<div className="mt-4 row">
 				<div className="col">
 					<button className="custom_btn" style={{ backgroundColor: '#63DDCF' }}>
 						Enregistrer

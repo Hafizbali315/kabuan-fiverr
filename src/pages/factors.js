@@ -9,12 +9,12 @@ import SearchIcon from '../images/search_icon.svg'
 const Factors = () => {
 	return (
 		<div className="container my-4">
-			<div className="row" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
+			<div className="my-4 row" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12 " style={{ display: 'flex', alignItems: 'center' }}>
 					<img src={MenuLineImg} alt="menuImg" />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					<img src={SearchIcon} alt="SearchIcon" />
-					<input className="search_input" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ? 😃" />
+					<input className="search_input" placeholder="Rechercher un facteur" />
 				</div>
 
 				<div className="col-md-2 col-12">
@@ -22,10 +22,12 @@ const Factors = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* List of custom factors */}
 
 			{/* Heading and Btn Row */}
-			<div className="row mt-4" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
+			<div className="my-4 row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
 				<div className="col">
 					<h1 style={{ display: 'flex', alignItems: 'center' }}>
 						Liste des facteurs personnalisés <div className="total_reports">5</div>
@@ -40,30 +42,44 @@ const Factors = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Factors Card Heading */}
-			<div className="row mt-4 " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>
-				<div className="col-lg-3 px-3">Type de facteur</div>
+			<div className="mt-4 row " style={{ fontWeight: '600', fontSize: '14px', color: '#060e14', opacity: 0.5 }}>
+				<div className="px-3 col-lg-3">Type de facteur</div>
 				<div className="col-lg-3">Impact</div>
 				<div className="col-lg-2">Statut</div>
 				<div className="col-lg-4">Emissions</div>
 			</div>
 
 			{/* Factors Cards */}
-			<div className="row mt-2">
+			<div className="mt-2 row">
 				<div className="col-12">
 					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 second view front salto HD" structure="Validé" emissions="2.4800" />
 				</div>
 				<div className="col-12">
-					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 second view streaming frontsalto SD" structure="Certifié" emissions="2.4800" />
+					<FactorsCard
+						typeOfFactor="Lorem ipsum"
+						impact="1 second view streaming frontsalto SD"
+						color="#63DDCF"
+						structure="Certifié"
+						emissions="2.4800"
+					/>
 				</div>
 				<div className="col-12">
-					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 mail marketing" structure="En attente" emissions="2.4800" />
+					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 mail marketing" opacity="0.5" structure="En attente" emissions="2.4800" />
 				</div>
 				<div className="col-12">
-					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 transaction abonnement" structure="En attente" emissions="2.4800" />
+					<FactorsCard
+						typeOfFactor="Lorem ipsum"
+						impact="1 transaction abonnement"
+						structure="En attente"
+						opacity="0.5"
+						emissions="2.4800"
+					/>
 				</div>
 				<div className="col-12">
-					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 requête plateforme" structure="En attente" emissions="2.4800" />
+					<FactorsCard typeOfFactor="Lorem ipsum" impact="1 requête plateforme" opacity="0.5" structure="En attente" emissions="2.4800" />
 				</div>
 			</div>
 		</div>

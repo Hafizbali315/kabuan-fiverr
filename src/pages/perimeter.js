@@ -13,12 +13,12 @@ import SearchIcon from '../images/search_icon.svg'
 const Perimeter = () => {
 	return (
 		<div className="container my-4">
-			<div className="row perimeter_header" style={{ justifyContent: 'space-between' }}>
+			<div className="my-4 row perimeter_header" style={{ justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12 perimeter_search">
 					<img src={MenuLineImg} alt="menuImg" />
 					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 					<img src={SearchIcon} alt="SearchIcon" />
-					<input className="search_input" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ? 😃" />
+					<input className="search_input" placeholder="Rechercher un périmètre" />
 				</div>
 
 				<div className="col-md-2 col-12">
@@ -26,8 +26,10 @@ const Perimeter = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/*? Synthèse impact ? */}
-			<div className="mt-5 row " style={{ alignItems: 'center' }}>
+			<div className="my-4 row " style={{ alignItems: 'center' }}>
 				<div className="col">
 					<h1>Liste des périmètres</h1>
 				</div>
@@ -41,7 +43,9 @@ const Perimeter = () => {
 				</div>
 			</div>
 
-			<div className="row mt-5">
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
+			<div className="mt-5 row">
 				<div className="col">
 					<h1>Synthèse impact</h1>
 				</div>
@@ -61,8 +65,10 @@ const Perimeter = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* List of Impacts */}
-			<div className="row mt-5">
+			<div className="my-5 row">
 				<div className="col-5">
 					<h1 style={{ display: 'flex' }}>
 						Liste des impacts <div className="total_reports">2</div>
@@ -91,9 +97,11 @@ const Perimeter = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Impact List Card */}
-			<div className="row mt-5 perimeter_list_heading">
-				<div className="col-lg-3 px-3">Type de facteur</div>
+			<div className="mt-5 row perimeter_list_heading">
+				<div className="px-3 col-lg-3">Type de facteur</div>
 				<div className="col-lg-3">Impact</div>
 				<div className="col-lg-2">Structure</div>
 				<div className="col-lg-4">Emissions</div>

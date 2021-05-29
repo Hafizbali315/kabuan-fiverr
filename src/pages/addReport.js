@@ -12,7 +12,7 @@ const AddReport = () => {
 	return (
 		<div className="container mt-4">
 			{/* Add Report Header */}
-			<div className="row">
+			<div className="my-4 row">
 				<div className="col-6" style={{ display: 'flex', alignItems: 'center' }}>
 					<Link to="/reports" className="">
 						{/* <input type="button" value=" Hello" className="custom_btn" style={{ backgroundColor: '#132A3A', height: '40px' }} /> */}
@@ -23,11 +23,7 @@ const AddReport = () => {
 							<span className="arrowLeft"></span> Retour
 						</button>
 					</Link>
-					<input type="text" className="search_input" placeholder="Rapport/id20199" />
-
-					{/* <p style={{ fontWeight: 'normal', fontSize: '14', color: '#060E14', opacity: '0.5', paddingTop: '17px', paddingLeft: '30px' }}>
-						Rapport/id20199
-					</p> */}
+					<input type="text" className="search_input" placeholder="Impact/id20199" />
 				</div>
 				<div className="col-6">
 					<button style={{ float: 'right', backgroundColor: '#63DDCF', height: '40px' }} className="custom_btn">
@@ -36,12 +32,14 @@ const AddReport = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Synthèse impact */}
-			<div className="row mt-5">
-				<div className="col-7">
+			<div className="my-4 row">
+				<div className="col-6">
 					<h1>Synthèse impact</h1>
 				</div>
-				<div className="col-5" style={{ display: 'flex', justifyContent: 'space-around' }}>
+				<div className="col-6" style={{ display: 'flex', justifyContent: 'space-around' }}>
 					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
 						Protocole <span className="arrowDownSm"></span>
 					</button>
@@ -57,7 +55,9 @@ const AddReport = () => {
 				</div>
 			</div>
 
-			<div className="row mt-4">
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
+			<div className="my-4 row">
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
 					<SmallCard text="Impact Total :" icon={HandHeart} value="40 gCO2" />
 				</div>
@@ -72,30 +72,34 @@ const AddReport = () => {
 			</div>
 
 			{/* Graphs */}
-			<div className="row mt-2">
-				<div className="col-5">
+			<div className="mb-4 row">
+				<div className="col-lg-5 col-12">
 					<BarChart />
 				</div>
 
 				{/* By Type Card */}
-				<div className="col-3">
+				<div className="col-lg-3 col-12">
 					<ByTypeCard />
 				</div>
 
 				{/* Arrow Chart */}
-				<div className="col-4">
+				<div className="col-lg-4 col-12">
 					<ArrowChart />
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* List of Factors */}
-			<div className="row mt-5 reports_list">
+			<div className="my-4 row reports_list">
 				<h1>
 					Liste des facteurs <div className="total_reports">2</div>
 				</h1>
 			</div>
 
-			<div className="row mt-4 factors_list_headeings">
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
+			<div className="mt-4 row factors_list_headeings">
 				<div className="col-lg-3">Type de facteur</div>
 				<div className="col-lg-3">Impact</div>
 				<div className="col-lg-2">Structure</div>

@@ -16,7 +16,7 @@ const Home = () => {
 	return (
 		<div className="container my-4">
 			{/* Home Header */}
-			<div className="row my-4" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
+			<div className="my-4 row" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12 home_search">
 					<img src={MenuLineImg} alt="menuImg" />
 					<input className="search_input" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ? 😃" />

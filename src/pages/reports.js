@@ -8,12 +8,12 @@ const Reports = () => {
 	return (
 		<div className="container my-4">
 			{/* Reports Header */}
-			<div className="row reports_header" style={{ justifyContent: 'space-between' }}>
+			<div className="my-4 row reports_header" style={{ justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12 reports_search">
 					<img src={MenuLineImg} alt="menuImg" />
 					&nbsp; &nbsp; &nbsp; &nbsp;
 					<img src={SearchIcon} alt="SearchIcon" />
-					<input type="text" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ?  😃" className="search_input" />
+					<input type="text" placeholder="Rechercher un rapport" className="search_input" />
 				</div>
 
 				<div className="col-md-2 col-12">
@@ -21,8 +21,10 @@ const Reports = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* List of Reports */}
-			<div className="row mt-5 reports_list">
+			<div className="my-4  row reports_list">
 				<div className="col">
 					<h1>
 						Liste des rapports <div className="total_reports">5</div>
@@ -37,9 +39,11 @@ const Reports = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Report Lists Cards Heading */}
-			<div className="row mt-4 reports_list_heading">
-				<div className="col-lg-4 px-1">Nom du rapport</div>
+			<div className="mt-4 row reports_list_heading">
+				<div className="px-1 col-lg-4">Nom du rapport</div>
 				<div className="col-lg-2">Editeur</div>
 				<div className="col-lg-2">Protocole</div>
 				<div className="col-lg-4">Emissions</div>

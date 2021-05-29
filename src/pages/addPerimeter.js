@@ -16,7 +16,7 @@ const AddPerimeter = () => {
 	return (
 		<div className="container mt-4">
 			{/* Add perimeter header */}
-			<div className="row">
+			<div className="my-4 row">
 				<div className="col-6" style={{ display: 'flex', alignItems: 'center' }}>
 					<Link to="/perimeters" className="">
 						<button
@@ -26,7 +26,7 @@ const AddPerimeter = () => {
 							<span className="arrowLeft"></span> Retour
 						</button>
 					</Link>
-					<input className="search_input" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ? 😃" />
+					<input className="search_input" placeholder="Périmètre/id20199" />
 				</div>
 				<div className="col-6">
 					<button style={{ float: 'right', backgroundColor: '#63DDCF' }} className="mt-2 custom_btn">
@@ -35,13 +35,15 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Type of perimeter */}
-			<div className="mt-5 row">
+			<div className="my-4 row">
 				<div className="col">
 					<h1>Type de périmètre</h1>
 				</div>
 			</div>
-			<div className="mt-3 row">
+			<div className="mt-3 mb-4 row">
 				<div className="mt-2 col-lg-3 col-md-6 col-12 mt-lg-0">
 					<XSCard icon={Remote_Control_line} text="Enterprice" cardBackgroundColor="#000000" textColor="#FFFFFF" />
 				</div>
@@ -59,13 +61,15 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* General Information */}
-			<div className="mt-5 row">
+			<div className="my-4 row">
 				<div className="col">
 					<h1>Information générale</h1>
 				</div>
 			</div>
-			<div className="mt-3 row">
+			<div className="mt-3 mb-4 row">
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
 					<MDCard icon={price_tag} cardBackgroundColor="#FFFFFF" textColor="#000000" value="Plateforme" text="Nom du périmètre :" />
 				</div>
@@ -75,13 +79,15 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Activity information */}
-			<div className="mt-5 row">
+			<div className="my-4 row">
 				<div className="col">
 					<h1>Information d’activité</h1>
 				</div>
 			</div>
-			<div className="mt-3 row">
+			<div className="mt-3 mb-4 row">
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
 					<MDCard icon={bill_line} cardBackgroundColor="#FFFFFF" text="Type d’activité :" textColor="#000000" value="Numérique" />
 				</div>
@@ -91,8 +97,10 @@ const AddPerimeter = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Employee  information */}
-			<div className="mt-5 row">
+			<div className="my-4 row">
 				<div className="col">
 					<h1>Information salariés</h1>
 				</div>
@@ -104,6 +112,16 @@ const AddPerimeter = () => {
 
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
 					<MDCard icon={contacts_line} cardBackgroundColor="#FFFFFF" textColor="#000000" text="Pourcentage télétravail :" value="15%" />
+				</div>
+			</div>
+
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
+			<div className="my-4 row">
+				<div className="col">
+					<button style={{ backgroundColor: '#63DDCF' }} className=" custom_btn">
+						Enregistrer
+					</button>
 				</div>
 			</div>
 		</div>

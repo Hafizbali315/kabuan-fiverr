@@ -10,10 +10,10 @@ const Contribution = () => {
 	return (
 		<div className="container my-4">
 			{/* Contribution page header */}
-			<div className="row" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
+			<div className="my-4 row" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12" style={{ display: 'flex', alignItems: 'center' }}>
 					<img src={MenuLineImg} alt="menuImg" />
-					<input className="search_input" placeholder="Bienvenue Alexandre, comment allez-vous aujourd’hui ? 😃" />
+					<input className="search_input" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
 				</div>
 
 				<div className="col-md-2 col-12">
@@ -21,10 +21,12 @@ const Contribution = () => {
 				</div>
 			</div>
 
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
 			{/* Contribute to a project */}
 
 			{/* Header and Button */}
-			<div className="mt-4 row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
+			<div className="my-4 row" style={{ justifyContent: 'space-between', alignItems: 'center' }}>
 				<div className="col">
 					<h1 style={{ display: 'flex', alignItems: 'center' }}>
 						Contribuer à un projet <img style={{ paddingLeft: '10px', paddingTop: '10px' }} src={earth_line} alt="img" />
@@ -39,7 +41,9 @@ const Contribution = () => {
 				</div>
 			</div>
 
-			<div className="mt-5 row">
+			<hr style={{ border: '1px dashed #B8B8B8' }} />
+
+			<div className="mt-4 row">
 				<div className="col">
 					<p style={{ fontSize: '14px', color: '#060E14', opacity: 0.5 }}> Nous avons repertorié 28 projets qui n’attendent que vous !</p>
 				</div>
