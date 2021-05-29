@@ -1,6 +1,6 @@
 const DropdownBtn = ({ btnText }) => {
 	return (
-		<div className="dropdown">
+		<div className="dropdown btnDropdown">
 			<button className="custom_btn" id="dropdownMenuLink" style={{ color: 'black', backgroundColor: '#FFFFFF' }} data-toggle="dropdown">
 				{btnText} <span className="arrowDownSm"></span>
 			</button>

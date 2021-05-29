@@ -101,6 +101,16 @@ h1 {
 	cursor: pointer;
 }
 
+.btnDropdown a {
+	font-size: 13px;
+	font-weight: 550;
+}
+
+.btnDropdown a:hover {
+	background-color: #000000;
+	color: #ffffff;
+}
+
 @import './styles/login.css';
 @import './styles/home.css';
 @import './styles/sidebar.css';
