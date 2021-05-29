@@ -11,6 +11,7 @@ import price_tag from '../images/price-tag-3-line.svg'
 import FactorsCard from '../components/FactorsCard'
 
 import hr_line from '../images/hr_line.svg'
+import DropdownBtn from '../components/DropdownBtn'
 
 const AddFactors = () => {
 	return (
@@ -66,15 +67,9 @@ const AddFactors = () => {
 					<h1>Information générale</h1>
 				</div>
 				<div className="col-4" style={{ display: 'flex', justifyContent: 'space-around' }}>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Scope <span className="arrowDownSm"></span>
-					</button>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Périmètre <span className="arrowDownSm"></span>
-					</button>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Type <span className="arrowDownSm"></span>
-					</button>
+					<DropdownBtn btnText="Scope" />
+					<DropdownBtn btnText="Périmètre" />
+					<DropdownBtn btnText="Type" />
 				</div>
 			</div>
 

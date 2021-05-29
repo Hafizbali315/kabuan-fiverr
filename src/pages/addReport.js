@@ -9,6 +9,7 @@ import ArrowChart from '../components/ArrowChart'
 import FactorsListCard from '../components/FactorsListCard'
 
 import hr_line from '../images/hr_line.svg'
+import DropdownBtn from '../components/DropdownBtn'
 
 const AddReport = () => {
 	return (
@@ -42,15 +43,10 @@ const AddReport = () => {
 					<h1>Synthèse impact</h1>
 				</div>
 				<div className="col-6" style={{ display: 'flex', justifyContent: 'space-around' }}>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Protocole <span className="arrowDownSm"></span>
-					</button>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Périmètre <span className="arrowDownSm"></span>
-					</button>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Protocole <span className="arrowDownSm"></span>
-					</button>
+					<DropdownBtn btnText="Protocole" />
+					<DropdownBtn btnText="Périmètre" />
+					<DropdownBtn btnText="Protocole" />
+
 					<button className="custom_btn" style={{ backgroundColor: '#132A3A' }}>
 						Export rapide
 					</button>

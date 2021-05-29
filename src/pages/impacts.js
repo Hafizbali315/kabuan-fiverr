@@ -12,6 +12,7 @@ import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
 
 import hr_line from '../images/hr_line.svg'
+import DropdownBtn from '../components/DropdownBtn'
 
 const Impacts = () => {
 	return (
@@ -77,25 +78,11 @@ const Impacts = () => {
 					</h1>
 				</div>
 				<div className="col-7" style={{ display: 'flex', justifyContent: 'space-around' }}>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Status <span className="arrowDownSm"></span>
-					</button>
-
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Scope <span className="arrowDownSm"></span>
-					</button>
-
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Périmètre <span className="arrowDownSm"></span>
-					</button>
-
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Type <span className="arrowDownSm"></span>
-					</button>
-
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Imputation <span className="arrowDownSm"></span>
-					</button>
+					<DropdownBtn btnText="Status" />
+					<DropdownBtn btnText="Scope" />
+					<DropdownBtn btnText="Périmètre" />
+					<DropdownBtn btnText="Type" />
+					<DropdownBtn btnText="Imputation" />
 				</div>
 			</div>
 

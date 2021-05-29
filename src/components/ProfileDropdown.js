@@ -30,17 +30,6 @@ const ProfileDropdown = () => {
 				</div>
 			</button>
 
-			{/* <button
-				className="btn btn-secondary dropdown-toggle"
-				type="button"
-				id="dropdownMenuButton"
-				data-toggle="dropdown"
-				aria-haspopup="true"
-				aria-expanded="false"
-			>
-				Hello
-			</button> */}
-
 			<div className="dropdown-menu " style={{ marginTop: '15px' }} aria-labelledby="dropdownMenuButton">
 				<div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
 					<h6>Link 1</h6>

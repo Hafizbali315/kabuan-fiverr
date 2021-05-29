@@ -13,6 +13,7 @@ import FactorsCard from '../components/FactorsCard'
 
 import hr_line from '../images/hr_line.svg'
 import { useState } from 'react'
+import DropdownBtn from '../components/DropdownBtn'
 
 const AddImpact = () => {
 	const [selectedId, setSelectedId] = useState(null)
@@ -81,15 +82,10 @@ const AddImpact = () => {
 					<h1>Composition</h1>
 				</div>
 				<div className="col-4" style={{ display: 'flex', justifyContent: 'space-around' }}>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Scope <span className="arrowDownSm"></span>
-					</button>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Périmètre <span className="arrowDownSm"></span>
-					</button>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Imputation <span className="arrowDownSm"></span>
-					</button>
+					{/* Buttons */}
+					<DropdownBtn btnText="Scope" />
+					<DropdownBtn btnText="Périmètre" />
+					<DropdownBtn btnText="Imputation" />
 				</div>
 			</div>
 

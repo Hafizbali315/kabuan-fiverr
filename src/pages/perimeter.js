@@ -11,6 +11,7 @@ import MenuLineImg from '../images/menulines.svg'
 import SearchIcon from '../images/search_icon.svg'
 
 import hr_line from '../images/hr_line.svg'
+import DropdownBtn from '../components/DropdownBtn'
 
 const Perimeter = () => {
 	return (
@@ -77,25 +78,12 @@ const Perimeter = () => {
 					</h1>
 				</div>
 				<div className="col-7" style={{ display: 'flex', justifyContent: 'space-around' }}>
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Type <span className="arrowDownSm"></span>
-					</button>
-
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Localisation <span className="arrowDownSm"></span>
-					</button>
-
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Activité <span className="arrowDownSm"></span>
-					</button>
-
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Salariés <span className="arrowDownSm"></span>
-					</button>
-
-					<button className="custom_btn" style={{ color: 'black', backgroundColor: '#FFFFFF' }}>
-						Imputation <span className="arrowDownSm"></span>
-					</button>
+					{/* Buttons */}
+					<DropdownBtn btnText="Type" />
+					<DropdownBtn btnText="Localisation" />
+					<DropdownBtn btnText="Activité" />
+					<DropdownBtn btnText="Salariés" />
+					<DropdownBtn btnText="Imputation" />
 				</div>
 			</div>
 
