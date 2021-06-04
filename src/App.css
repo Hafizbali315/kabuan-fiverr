@@ -111,6 +111,37 @@ h1 {
 	color: #ffffff;
 }
 
+.md_card_container {
+	background-color: #ffffff;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-radius: 3px;
+	padding: 0 17px;
+	color: #000000;
+}
+
+.md_card_input {
+	color: #000000;
+	opacity: 1;
+	outline: none;
+	border: none;
+	text-align: right;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+input::-webkit-calendar-picker-indicator {
+	opacity: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
 @import './styles/login.css';
 @import './styles/home.css';
 @import './styles/sidebar.css';

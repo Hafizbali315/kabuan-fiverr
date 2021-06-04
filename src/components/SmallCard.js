@@ -1,4 +1,6 @@
-const SmallCard = ({ text, value, icon, arrowLink, heading }) => {
+import { Link } from 'react-router-dom'
+
+const SmallCard = ({ text, value, icon, arrowLink, heading, pageRoute }) => {
 	return (
 		<div className="smallCard">
 			<div className="row">
@@ -12,7 +14,11 @@ const SmallCard = ({ text, value, icon, arrowLink, heading }) => {
 					{value ? (
 						<h2 style={{ textAlign: 'right', paddingTop: '2px' }}>{value}</h2>
 					) : (
-						arrowLink && <img style={{ float: 'right' }} src={arrowLink} alt="img1" />
+						arrowLink && (
+							<Link to={pageRoute}>
+								<img style={{ float: 'right' }} src={arrowLink} alt="img1" />
+							</Link>
+						)
 					)}
 				</div>
 			</div>

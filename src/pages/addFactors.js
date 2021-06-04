@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import SmallCard from '../components/SmallCard'
-import MDCard from '../components/MD_Card'
 
 import HandHeart from '../images/hand-heart.svg'
 import LayoutLine from '../images/perimeter.svg'
@@ -76,11 +75,40 @@ const AddFactors = () => {
 			{/* General Information Cards */}
 			<div className="my-4 row">
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
-					<MDCard icon={price_tag} cardBackgroundColor="#FFFFFF" textColor="#000000" value="Aucun nom" text="Nom du facteur impact :" />
+					<div className="md_card_container">
+						<div style={{ display: 'flex', alignItems: 'center' }}>
+							<div className="icon_contaniner">
+								<img src={price_tag} alt="img" />
+							</div>
+							<span className="px-3" style={{ fontWeight: '500', fontSize: '12px' }}>
+								Nom du facteur impact :
+							</span>
+						</div>
+						<div>
+							<input className="md_card_input" type="text" placeholder="Aucun nom" />
+						</div>
+					</div>
 				</div>
 
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
-					<MDCard icon={file_edit_line} cardBackgroundColor="#FFFFFF" textColor="#000000" value="Aucun tag" text="Ajouter un tag :" />
+					<div className="md_card_container">
+						<div style={{ display: 'flex', alignItems: 'center' }}>
+							<div className="icon_contaniner">
+								<img src={file_edit_line} alt="img" />
+							</div>
+							<span className="px-3" style={{ fontWeight: '500', fontSize: '12px' }}>
+								Ajouter un tag :
+							</span>
+						</div>
+						<div>
+							<datalist id="feature_md_2">
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</datalist>
+							<input list="feature_md_2" className="md_card_input" type="text" placeholder="Aucun tag" />
+						</div>
+					</div>
 				</div>
 			</div>
 

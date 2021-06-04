@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import RapportImg from '../images/rapport.svg'
 import PerimeterImg from '../images/perimeter.svg'
-import VectorImg from '../images/vector.svg'
+import featuresImg from '../images/facteurs.svg'
 import ImpactImg from '../images/equalizer.svg'
 import EvaluationImg from '../images/thumb.svg'
 import EarthImg from '../images/earth2.svg'
@@ -46,7 +46,7 @@ const Sidebar = () => {
 				<div className="col-12" style={{ display: 'flex', alignItems: 'center', position: 'relative' }}>
 					<Link className={`link_list ${isActive('/factors') || isActive('/factors/add-factor')}`} to="/factors">
 						<div className="rectangle"></div>
-						<img src={VectorImg} alt="rapport" />
+						<img src={featuresImg} alt="rapport" />
 						Facteurs
 					</Link>
 				</div>

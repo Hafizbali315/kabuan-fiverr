@@ -55,7 +55,7 @@ const AddReport = () => {
 
 			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
-			<div className="my-4 row">
+			<div className="my-3 row">
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
 					<SmallCard text="Impact Total :" icon={hand_heart} value="40 gCO2" />
 				</div>
@@ -89,7 +89,7 @@ const AddReport = () => {
 			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* List of Factors */}
-			<div className="my-4 row reports_list">
+			<div className="mt-4 mb-3 row reports_list">
 				<h1>
 					Liste des facteurs <div className="total_reports">2</div>
 				</h1>

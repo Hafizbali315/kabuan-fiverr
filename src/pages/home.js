@@ -52,7 +52,7 @@ const Home = () => {
 			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Progression */}
-			<div className="mt-4 mb-2 row progression_section">
+			<div className="mt-4 mb-3 row progression_section">
 				<h1>
 					Progression <div className="progression_value">60%</div>
 				</h1>
@@ -73,27 +73,27 @@ const Home = () => {
 
 			<div className="mt-1 row">
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
-					<SmallCard heading="Périmètre" icon={LayoutLine} arrowLink={ArrowLink} />
+					<SmallCard pageRoute="/perimeters" heading="Périmètre" icon={LayoutLine} arrowLink={ArrowLink} />
 				</div>
 
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
-					<SmallCard heading="Facteurs" icon={AnticlockwiseLine} arrowLink={ArrowLink} />{' '}
+					<SmallCard pageRoute="/factors" heading="Facteurs" icon={AnticlockwiseLine} arrowLink={ArrowLink} />{' '}
 				</div>
 
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
-					<SmallCard heading="Impact" icon={ImpactImg} arrowLink={ArrowLink} />
+					<SmallCard pageRoute="/impacts" heading="Impact" icon={ImpactImg} arrowLink={ArrowLink} />
 				</div>
 
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
-					<SmallCard heading="Rapport" icon={RapportImg} arrowLink={ArrowLink} />
+					<SmallCard pageRoute="/reports" heading="Rapport" icon={RapportImg} arrowLink={ArrowLink} />
 				</div>
 
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
-					<SmallCard heading="Evaluation" icon={EvaluationImg} arrowLink={ArrowLink} />
+					<SmallCard pageRoute="/evaluation" heading="Evaluation" icon={EvaluationImg} arrowLink={ArrowLink} />
 				</div>
 
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
-					<SmallCard heading="Assistance" icon={HeadphoneImg} arrowLink={ArrowLink} />
+					<SmallCard pageRoute="/assistance" heading="Assistance" icon={HeadphoneImg} arrowLink={ArrowLink} />
 				</div>
 			</div>
 		</div>

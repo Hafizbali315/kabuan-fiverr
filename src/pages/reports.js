@@ -12,7 +12,7 @@ const Reports = () => {
 	return (
 		<div className="container my-4">
 			{/* Reports Header */}
-			<div className="mt-4 mb-3 row reports_header" style={{ justifyContent: 'space-between' }}>
+			<div className="my-4 row reports_header" style={{ justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12 reports_search">
 					<img src={MenuLineImg} alt="menuImg" />
 					&nbsp; &nbsp; &nbsp; &nbsp;
@@ -28,7 +28,7 @@ const Reports = () => {
 			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* List of Reports */}
-			<div className="my-3 row reports_list">
+			<div className="my-4 row reports_list">
 				<div className="col">
 					<h1>
 						Liste des rapports <div className="total_reports">5</div>

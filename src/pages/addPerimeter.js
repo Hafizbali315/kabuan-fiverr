@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import XSCard from '../components/XS_Card'
-import MDCard from '../components/MD_Card'
 
 import Remote_Control_line from '../images/remote-control-line.svg'
 import Swap_Box_Line from '../images/swap-box-line.svg'
@@ -17,6 +16,8 @@ import { useState } from 'react'
 
 const AddPerimeter = () => {
 	const [selectedId, setSelectedId] = useState(null)
+	const [intValue, setIntValue] = useState()
+	const [floatVal, setFloatVal] = useState()
 
 	const XS_Card_Data = [
 		{ id: 1, icon: Remote_Control_line, text: 'Enterprice' },
@@ -24,6 +25,19 @@ const AddPerimeter = () => {
 		{ id: 3, icon: map_line, text: 'Enterprice' },
 		{ id: 4, icon: navigation_line, text: 'Enterprice' },
 	]
+
+	const changeToInt = (e) => {
+		setIntValue(parseInt(e.target.value))
+	}
+
+	const changeToFloat = (e) => {
+		e.preventDefault()
+
+		const { value } = e.target
+		const x = parseFloat(value)
+		const preVal = x.toFixed(1)
+		setFloatVal(preVal)
+	}
 
 	return (
 		<div className="container mt-4">
@@ -80,11 +94,40 @@ const AddPerimeter = () => {
 			</div>
 			<div className="mt-3 mb-4 row">
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
-					<MDCard icon={price_tag} cardBackgroundColor="#FFFFFF" textColor="#000000" value="Plateforme" text="Nom du périmètre :" />
+					<div className="md_card_container">
+						<div style={{ display: 'flex', alignItems: 'center' }}>
+							<div className="icon_contaniner">
+								<img src={price_tag} alt="img" />
+							</div>
+							<span className="px-3" style={{ fontWeight: '500', fontSize: '12px' }}>
+								Nom du périmètre :
+							</span>
+						</div>
+						<div>
+							<input className="md_card_input" type="text" placeholder="Plateforme" />
+						</div>
+					</div>
 				</div>
 
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
-					<MDCard icon={map_line} cardBackgroundColor="#FFFFFF" textColor="#000000" value="Boulogne Billancourt" text="Localisation :" />
+					<div className="md_card_container">
+						<div style={{ display: 'flex', alignItems: 'center' }}>
+							<div className="icon_contaniner">
+								<img src={map_line} alt="img" />
+							</div>
+							<span className="px-3" style={{ fontWeight: '500', fontSize: '12px' }}>
+								Localisation :
+							</span>
+						</div>
+						<div>
+							<datalist id="locations">
+								<option>Location 1</option>
+								<option>Location 2</option>
+								<option>Location 3</option>
+							</datalist>
+							<input list="locations" className="md_card_input" type="text" placeholder="Boulogne Billancourt" />
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -98,11 +141,45 @@ const AddPerimeter = () => {
 			</div>
 			<div className="mt-3 mb-4 row">
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
-					<MDCard icon={bill_line} cardBackgroundColor="#FFFFFF" text="Type d’activité :" textColor="#000000" value="Numérique" />
+					<div className="md_card_container">
+						<div style={{ display: 'flex', alignItems: 'center' }}>
+							<div className="icon_contaniner">
+								<img src={bill_line} alt="img" />
+							</div>
+							<span className="px-3" style={{ fontWeight: '500', fontSize: '12px' }}>
+								Type d’activité :
+							</span>
+						</div>
+						<div>
+							<datalist id="digital">
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</datalist>
+							<input list="digital" className="md_card_input" type="text" placeholder="Numérique" />
+						</div>
+					</div>
 				</div>
 
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
-					<MDCard icon={dvd_line} cardBackgroundColor="#FFFFFF" textColor="#000000" value="Fioul" text="Type d’activité :" />
+					<div className="md_card_container">
+						<div style={{ display: 'flex', alignItems: 'center' }}>
+							<div className="icon_contaniner">
+								<img src={dvd_line} alt="img" />
+							</div>
+							<span className="px-3" style={{ fontWeight: '500', fontSize: '12px' }}>
+								Type d’activité :
+							</span>
+						</div>
+						<div>
+							<datalist id="fuelList">
+								<option>Option 1</option>
+								<option>Option 2</option>
+								<option>Option 3</option>
+							</datalist>
+							<input list="fuelList" className="md_card_input" type="text" placeholder="Fioul" />
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -116,11 +193,35 @@ const AddPerimeter = () => {
 			</div>
 			<div className="mt-3 mb-4 row">
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
-					<MDCard icon={account_circle} cardBackgroundColor="#FFFFFF" text="Nombre de salariés : :" textColor="#000000" value="150" />
+					<div className="md_card_container">
+						<div style={{ display: 'flex', alignItems: 'center' }}>
+							<div className="icon_contaniner">
+								<img src={account_circle} alt="img" />
+							</div>
+							<span className="px-3" style={{ fontWeight: '500', fontSize: '12px' }}>
+								Nombre de salariés :
+							</span>
+						</div>
+						<div>
+							<input className="md_card_input" value={intValue} type="number" placeholder="150" onChange={changeToInt} />
+						</div>
+					</div>
 				</div>
 
 				<div className="mt-2 col-lg-6 col-12 mt-md-0">
-					<MDCard icon={contacts_line} cardBackgroundColor="#FFFFFF" textColor="#000000" text="Pourcentage télétravail :" value="15%" />
+					<div className="md_card_container">
+						<div style={{ display: 'flex', alignItems: 'center' }}>
+							<div className="icon_contaniner">
+								<img src={contacts_line} alt="img" />
+							</div>
+							<span className="px-3" style={{ fontWeight: '500', fontSize: '12px' }}>
+								Pourcentage télétravail :
+							</span>
+						</div>
+						<div style={{ fontWeight: '600', fontSize: '13px' }}>
+							<input className="md_card_input" value={floatVal} type="number" step="0.1" placeholder="15" onChange={changeToFloat} /> %
+						</div>
+					</div>
 				</div>
 			</div>
 
