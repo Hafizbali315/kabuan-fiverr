@@ -14,7 +14,7 @@ const Factors = () => {
 			<div className="my-4 row" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12 " style={{ display: 'flex', alignItems: 'center' }}>
 					<img src={MenuLineImg} alt="menuImg" />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp;
 					<img src={SearchIcon} alt="SearchIcon" />
 					<input className="search_input" placeholder="Rechercher un facteur" />
 				</div>

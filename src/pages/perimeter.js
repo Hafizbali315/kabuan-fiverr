@@ -19,7 +19,7 @@ const Perimeter = () => {
 			<div className="my-4 row perimeter_header" style={{ justifyContent: 'space-between' }}>
 				<div className="col-md-7 col-12 perimeter_search">
 					<img src={MenuLineImg} alt="menuImg" />
-					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+					&nbsp; &nbsp; &nbsp; &nbsp;
 					<img src={SearchIcon} alt="SearchIcon" />
 					<input className="search_input" placeholder="Rechercher un périmètre" />
 				</div>
