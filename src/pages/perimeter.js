@@ -48,13 +48,13 @@ const Perimeter = () => {
 
 			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
-			<div className="mt-5 row">
+			<div className="mt-4 row">
 				<div className="col">
 					<h1>Synthèse impact</h1>
 				</div>
 			</div>
 
-			<div className="mt-1 row">
+			<div className="mt-3 row">
 				<div className="py-0 col-lg-6 col-xl-4 py-lg-3">
 					<SmallCard text="Impact Total :" icon={HandHeart} value="40 gCO2" />
 				</div>
@@ -71,7 +71,7 @@ const Perimeter = () => {
 			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* List of Impacts */}
-			<div className="my-5 row">
+			<div className="my-4 row">
 				<div className="col-5">
 					<h1 style={{ display: 'flex' }}>
 						Liste des impacts <div className="total_reports">2</div>
@@ -90,7 +90,7 @@ const Perimeter = () => {
 			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Impact List Card */}
-			<div className="mt-5 row perimeter_list_heading">
+			<div className="mt-4 row perimeter_list_heading">
 				<div className="px-3 col-lg-3">Type de facteur</div>
 				<div className="col-lg-3">Impact</div>
 				<div className="col-lg-2">Structure</div>

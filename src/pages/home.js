@@ -52,13 +52,13 @@ const Home = () => {
 			<img src={hr_line} className="img-fluid" style={{ maxWidth: '100%' }} alt="hr_line" />
 
 			{/* Progression */}
-			<div className="mt-4 mb-3 row progression_section">
+			<div className="my-4  row progression_section">
 				<h1>
 					Progression <div className="progression_value">60%</div>
 				</h1>
 			</div>
 
-			<div className="row">
+			<div className="row mt-4">
 				<div className="col-lg-12">
 					<ProgressBar done="60%" />
 				</div>
